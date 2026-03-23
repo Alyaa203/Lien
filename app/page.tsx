@@ -182,6 +182,50 @@ export default function Home() {
 
         </div>
       </Link>
+  
+      <Link href="/projects/Subatomique">
+      <div className="group h-full cursor-pointer rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+          
+          <div className="mb-4 inline-block rounded-full bg-indigo-100 px-3 py-1 text-xs font-semibold text-indigo-700">
+            Projet statistique sur le compteur de Muller en Subatomique
+          </div>
+
+          <h3 className="text-xl font-bold text-slate-900 group-hover:text-indigo-600">
+            Subatomique 
+          </h3>
+
+          <p className="mt-3 leading-7 text-slate-600">
+           Nous avons réalisé un travaux pratique sur le com
+          </p>
+
+          <p className="mt-4 text-sm font-medium text-slate-500">
+            Python 
+          </p>
+
+        </div>
+      </Link>
+      <Link href="/projects/Optique">
+      <div className="group h-full cursor-pointer rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+          
+          <div className="mb-4 inline-block rounded-full bg-indigo-100 px-3 py-1 text-xs font-semibold text-indigo-700">
+            Projet statistique sur le compteur de Muller en Subatomique
+          </div>
+
+          <h3 className="text-xl font-bold text-slate-900 group-hover:text-indigo-600">
+            Diffraction en optique  
+          </h3>
+
+          <p className="mt-3 leading-7 text-slate-600">
+           Nous avons réalisé un travaux pratique sur le com
+          </p>
+
+          <p className="mt-4 text-sm font-medium text-slate-500">
+            Python 
+          </p>
+
+        </div>
+      </Link>
+
 
 
           </div>
