@@ -211,7 +211,7 @@ export default function Home() {
                 href="#coding"
                 className="rounded-full bg-slate-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-slate-800"
               >
-                Code & IA
+               Programmation
               </a>
               <a
                 href="#physics"
@@ -241,15 +241,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Intro projets */}
-        <section className="mb-16 rounded-3xl border border-slate-200 bg-white/70 p-8 shadow-sm backdrop-blur-sm">
-          <h2 className="text-3xl font-bold tracking-tight">Mes projets</h2>
-          <p className="mt-3 max-w-3xl leading-7 text-slate-600">
-            Les projets sont organisés par domaine pour rendre la navigation plus
-            claire et permettre une lecture rapide de mon profil, entre code,
-            recherche, physique, UX et outils d’analyse.
-          </p>
-        </section>
+
 
         {/* Sections projets */}
         <ProjectSection
@@ -287,43 +279,60 @@ export default function Home() {
           projects={matlabProjects}
         />
 
-        {/* Contact */}
-        <section
-          id="contact"
-          className="rounded-3xl bg-slate-900 px-8 py-12 text-white shadow-2xl"
-        >
-          <div className="grid gap-8 md:grid-cols-2 md:items-center">
-            <div>
-              <h2 className="text-3xl font-bold">Contactez-moi</h2>
-              <p className="mt-4 max-w-xl leading-7 text-slate-300">
-                Je suis intéressée par les projets en intelligence artificielle,
-                traitement du signal, UX, recherche appliquée et modélisation
-                scientifique.
-              </p>
-            </div>
+{/* Contact */}
+<section
+  id="contact"
+  className="rounded-3xl bg-slate-900 px-8 py-12 text-white shadow-2xl"
+>
+  <div className="grid gap-10 md:grid-cols-2 md:items-center">
+    
+    {/* Gauche */}
+    <div className="max-w-md">
+      <h2 className="text-3xl font-bold">Contact</h2>
 
-            <div className="space-y-4">
-              <div className="rounded-2xl bg-white/10 p-4">
-                <p className="text-sm text-slate-300">Email</p>
-                <p className="mt-1 font-semibold">alyaa.saabfr@gmail.com</p>
-              </div>
+      <p className="mt-4 leading-7 text-slate-300">
+        N’hésitez pas à me contacter pour toute question ou échange.
+      </p>
+    </div>
 
-              <div className="rounded-2xl bg-white/10 p-4">
-                <p className="text-sm text-slate-300">LinkedIn</p>
-                <p className="mt-1 font-semibold">
-                  www.linkedin.com/in/alyaa-saab-ensc
-                </p>
-              </div>
+    {/* Droite */}
+    <div className="space-y-3 text-sm">
+      <a
+        href="mailto:alyaa.saabfr@gmail.com"
+        className="block rounded-xl border border-white/10 px-4 py-3 transition hover:bg-white/10"
+      >
+        <span className="text-slate-400">Email</span>
+        <div className="font-medium text-white">
+          alyaa.saabfr@gmail.com
+        </div>
+      </a>
 
-              <div className="rounded-2xl bg-white/10 p-4">
-                <p className="text-sm text-slate-300">GitHub</p>
-                <p className="mt-1 font-semibold">
-                  github.com/Alyaa203
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+      <a
+        href="https://www.linkedin.com/in/alyaa-saab-ensc"
+        target="_blank"
+        rel="noreferrer"
+        className="block rounded-xl border border-white/10 px-4 py-3 transition hover:bg-white/10"
+      >
+        <span className="text-slate-400">LinkedIn</span>
+        <div className="font-medium text-white">
+          linkedin.com/in/alyaa-saab-ensc
+        </div>
+      </a>
+
+      <a
+        href="https://github.com/Alyaa203"
+        target="_blank"
+        rel="noreferrer"
+        className="block rounded-xl border border-white/10 px-4 py-3 transition hover:bg-white/10"
+      >
+        <span className="text-slate-400">GitHub</span>
+        <div className="font-medium text-white">
+          github.com/Alyaa203
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
 
         {/* Footer */}
         <footer className="py-8 text-center text-sm text-slate-500">

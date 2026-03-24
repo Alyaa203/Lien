@@ -134,7 +134,7 @@ export default function XAIProject() {
           </button>
 
           <p className="mt-3 text-sm text-slate-500">
-            Architecture du modèle utilisé pour la classification.
+            Résultats obtenues 
           </p>
         </section>
 
