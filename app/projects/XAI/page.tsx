@@ -1,6 +1,11 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 
 export default function XAIProject() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900">
       <div className="max-w-6xl mx-auto px-6 py-12 md:px-10 md:py-16">
@@ -12,11 +17,9 @@ export default function XAIProject() {
         >
           ← Retour à l’accueil
         </Link>
-      
 
         {/* HEADER */}
         <section className="mb-12">
-
           <div className="inline-block px-3 py-1 mb-4 rounded-full bg-indigo-100 text-indigo-700 text-sm font-medium">
             Stage de recherche – Sorbonne Université / CNRS
           </div>
@@ -26,41 +29,30 @@ export default function XAIProject() {
           </h1>
 
           <p className="text-lg text-slate-600 max-w-3xl leading-relaxed">
-            Stage de recherche portant sur l’interprétation de modèles de deep learning
-            appliqués à des données hyperspectrales pour la classification de pigments
-            historiques dans les œuvres d’art.
+            J’ai travaillé sur l’interprétation de modèles de deep learning appliqués
+            à des données hyperspectrales pour identifier des pigments dans des œuvres d’art.
           </p>
+        </section>
 
-        </section>
-  {/* Image principale */}
-  <section className="mb-12">
-          <div className="rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm">
-            <img
-              src="/CNN.png"
-              alt="Visualisation de la simulation de l’équation de Schrödinger"
-              className="w-full h-auto"
-            />
-          </div>
-        </section>
+
+
         {/* CONTEXTE */}
         <section className="grid md:grid-cols-2 gap-6 mb-12">
 
           <div className="bg-white border rounded-2xl p-6 shadow-sm">
             <h2 className="text-xl font-semibold mb-3">Contexte scientifique</h2>
             <p className="text-slate-600 leading-relaxed">
-              Le projet s’inscrit dans l’analyse de données hyperspectrales issues
-              d’œuvres peintes. Chaque pigment est représenté par des signatures
-              spectrales mesurées sur plusieurs centaines de longueurs d’onde,
-              couvrant le visible et l’infrarouge.
+              Les pigments possèdent des signatures spectrales mesurées sur de nombreuses
+              longueurs d’onde. Ces données hyperspectrales permettent de les distinguer,
+              mais restent difficiles à interpréter.
             </p>
           </div>
 
           <div className="bg-white border rounded-2xl p-6 shadow-sm">
             <h2 className="text-xl font-semibold mb-3">Objectif</h2>
             <p className="text-slate-600 leading-relaxed">
-              Comprendre les décisions de modèles de deep learning (CNN, FCNN)
-              en identifiant les zones spectrales influençant la prédiction des pigments,
-              afin de rendre les modèles interprétables.
+              Comprendre les décisions de modèles comme les CNN en identifiant
+              quelles zones du spectre influencent réellement les prédictions.
             </p>
           </div>
 
@@ -74,9 +66,9 @@ export default function XAIProject() {
 
             <div>
               <p className="text-slate-600 leading-relaxed">
-                Deux approches d’intelligence artificielle explicable ont été utilisées :
-                SHAP et LIME. Ces méthodes permettent d’attribuer une importance aux
-                différentes zones du spectre en fonction de leur contribution à la prédiction.
+                J’ai utilisé deux approches d’IA explicable pour analyser les modèles :
+                SHAP et LIME. Elles permettent d’attribuer une importance aux différentes
+                zones du spectre en fonction de leur contribution.
               </p>
             </div>
 
@@ -84,7 +76,7 @@ export default function XAIProject() {
               <ul className="space-y-3 text-slate-700">
                 <li className="flex gap-3">
                   <span className="mt-1 h-2.5 w-2.5 rounded-full bg-indigo-500"></span>
-                  <span>SHAP : valeurs de Shapley issues de la théorie des jeux</span>
+                  <span>SHAP : attribution basée sur les valeurs de Shapley</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="mt-1 h-2.5 w-2.5 rounded-full bg-indigo-500"></span>
@@ -92,11 +84,11 @@ export default function XAIProject() {
                 </li>
                 <li className="flex gap-3">
                   <span className="mt-1 h-2.5 w-2.5 rounded-full bg-indigo-500"></span>
-                  <span>Analyse sur spectres VIS et SWIR</span>
+                  <span>Analyse VIS et SWIR</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="mt-1 h-2.5 w-2.5 rounded-full bg-indigo-500"></span>
-                  <span>Segmentation en zones spectrales</span>
+                  <span>Étude par zones spectrales</span>
                 </li>
               </ul>
             </div>
@@ -111,35 +103,42 @@ export default function XAIProject() {
           <div className="grid md:grid-cols-2 gap-6">
 
             <div className="bg-white border rounded-2xl p-6 shadow-sm">
-              <h3 className="text-lg font-semibold mb-2">Performance des modèles</h3>
+              <h3 className="text-lg font-semibold mb-2">Performance</h3>
               <p className="text-slate-600">
-                Les modèles CNN et FCNN atteignent respectivement ~99% et ~97% de précision,
-                montrant la forte capacité de discrimination des signatures spectrales.
+                Les modèles atteignent jusqu’à 99% de précision, montrant
+                la richesse des signatures spectrales.
               </p>
             </div>
 
             <div className="bg-white border rounded-2xl p-6 shadow-sm">
               <h3 className="text-lg font-semibold mb-2">Interprétation</h3>
               <p className="text-slate-600">
-                L’analyse SHAP/LIME permet d’identifier les zones spectrales pertinentes,
-                mais montre également les limites des approches sans segmentation préalable.
+                SHAP et LIME mettent en évidence les zones utiles du spectre,
+                mais révèlent aussi les limites des approches globales.
               </p>
             </div>
 
           </div>
         </section>
+                {/* IMAGE AVEC ZOOM */}
+                <section className="mb-12">
+          <button
+            onClick={() => setSelectedImage("/CNN.png")}
+            className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:shadow-xl"
+          >
+            <img
+              src="/CNN.png"
+              alt="Architecture du modèle CNN"
+              className="w-full h-auto object-contain"
+            />
+          </button>
 
-        {/* DIFFICULTES */}
-        <section className="mb-12 bg-white border rounded-2xl p-6 shadow-sm">
-          <h2 className="text-2xl font-semibold mb-4">Difficultés</h2>
-
-          <p className="text-slate-600 leading-relaxed">
-            La principale difficulté réside dans la complexité des données hyperspectrales
-            et l’adaptation des méthodes d’interprétabilité à des signaux continus.
-            L’implémentation de DeepSHAP et l’analyse des résultats ont nécessité
-            une compréhension approfondie des modèles et des données.
+          <p className="mt-3 text-sm text-slate-500">
+            Architecture du modèle utilisé pour la classification.
           </p>
         </section>
+
+
 
         {/* TECH */}
         <section className="bg-white border rounded-2xl p-6 shadow-sm">
@@ -157,6 +156,31 @@ export default function XAIProject() {
         </section>
 
       </div>
+
+      {/* LIGHTBOX */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div
+            className="relative w-full max-w-5xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setSelectedImage(null)}
+              className="absolute -top-12 right-0 text-white text-3xl"
+            >
+              ×
+            </button>
+
+            <img
+              src={selectedImage}
+              className="w-full max-h-[90vh] object-contain rounded-2xl bg-white"
+            />
+          </div>
+        </div>
+      )}
     </main>
   );
 }

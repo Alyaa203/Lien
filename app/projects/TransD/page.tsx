@@ -1,10 +1,27 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Hackaphone() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  const images = [
+    {
+      src: "/hackaphone.png",
+      alt: "Interface du projet Hackaphone",
+      caption: "Interface de contrôle audio",
+    },
+    {
+      src: "/hackaphone2.png",
+      alt: "Interaction temps réel du projet Hackaphone",
+      caption: "Interaction en temps réel via capteurs",
+    },
+  ];
+
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900">
       <div className="max-w-6xl mx-auto px-6 py-12 md:px-10 md:py-16">
-
         {/* Retour */}
         <Link
           href="/"
@@ -24,33 +41,31 @@ export default function Hackaphone() {
           </h1>
 
           <p className="text-lg text-slate-600 max-w-3xl leading-relaxed">
-            Développement d’un système interactif permettant de contrôler et
-            transformer la musique en temps réel à l’aide d’un smartphone ou
-            d’une manette Bluetooth, via le protocole OSC.
+            En groupe, nous avons développé un système interactif capable de
+            contrôler et transformer la musique en temps réel à l’aide d’un
+            smartphone ou d’une manette Bluetooth via OSC.
           </p>
         </section>
 
         {/* CONTEXTE */}
         <section className="grid md:grid-cols-2 gap-6 mb-12">
-
           <div className="bg-white border rounded-2xl p-6 shadow-sm">
             <h2 className="text-xl font-semibold mb-3">Contexte</h2>
             <p className="text-slate-600 leading-relaxed">
-              Projet réalisé en groupe visant à concevoir un instrument numérique
-              interactif permettant de manipuler un flux audio en temps réel,
-              dans une logique proche d’un contrôleur DJ ou d’un système de live performance.
+              Ce projet explore la création d’un instrument numérique interactif
+              capable de manipuler un flux audio en temps réel, dans une logique
+              proche d’un contrôleur DJ ou d’un outil de live performance.
             </p>
           </div>
 
           <div className="bg-white border rounded-2xl p-6 shadow-sm">
             <h2 className="text-xl font-semibold mb-3">Objectif</h2>
             <p className="text-slate-600 leading-relaxed">
-              Permettre à l’utilisateur de contrôler dynamiquement des paramètres
-              audio à partir de capteurs externes (smartphone ou manette), et
-              transformer le son en temps réel.
+              L’objectif consistait à contrôler plusieurs paramètres audio à
+              partir de capteurs externes, puis à transformer le son en temps
+              réel de façon fluide et intuitive.
             </p>
           </div>
-
         </section>
 
         {/* METHODO */}
@@ -58,12 +73,12 @@ export default function Hackaphone() {
           <h2 className="text-2xl font-semibold mb-5">Architecture du système</h2>
 
           <div className="grid md:grid-cols-2 gap-6">
-
             <div>
               <p className="text-slate-600 leading-relaxed">
-                Les données issues des capteurs (smartphone ou manette Bluetooth)
-                sont transmises via le protocole OSC à un programme Python chargé
-                de traiter et transformer le signal audio en temps réel.
+                Les données issues du smartphone ou de la manette Bluetooth
+                transitent via le protocole OSC vers un programme Python chargé
+                de traiter le signal audio en temps réel et de mapper les gestes
+                utilisateur à différents effets.
               </p>
             </div>
 
@@ -75,11 +90,11 @@ export default function Hackaphone() {
                 </li>
                 <li className="flex gap-3">
                   <span className="mt-1 h-2.5 w-2.5 rounded-full bg-indigo-500"></span>
-                  <span>Traitement audio temps réel</span>
+                  <span>Traitement audio en temps réel</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="mt-1 h-2.5 w-2.5 rounded-full bg-indigo-500"></span>
-                  <span>Mapping des capteurs → paramètres audio</span>
+                  <span>Mapping capteurs → paramètres audio</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="mt-1 h-2.5 w-2.5 rounded-full bg-indigo-500"></span>
@@ -87,7 +102,6 @@ export default function Hackaphone() {
                 </li>
               </ul>
             </div>
-
           </div>
         </section>
 
@@ -96,61 +110,64 @@ export default function Hackaphone() {
           <h2 className="text-2xl font-semibold mb-5">Fonctionnalités</h2>
 
           <div className="grid md:grid-cols-2 gap-6">
-
             <div className="bg-white border rounded-2xl p-6 shadow-sm">
               <h3 className="text-lg font-semibold mb-2">Effets audio</h3>
-              <p className="text-slate-600">
-                Modification dynamique du signal audio avec différents effets :
-                filtrage fréquentiel, distorsion, chorus, écho et réverbération.
+              <p className="text-slate-600 leading-relaxed">
+                Le système permet de modifier le signal avec plusieurs effets,
+                comme le filtrage fréquentiel, la distorsion, le chorus, l’écho
+                et la réverbération.
               </p>
             </div>
 
             <div className="bg-white border rounded-2xl p-6 shadow-sm">
               <h3 className="text-lg font-semibold mb-2">Interaction utilisateur</h3>
-              <p className="text-slate-600">
-                Contrôle en temps réel via smartphone ou manette Bluetooth,
-                permettant une interaction intuitive avec le système.
+              <p className="text-slate-600 leading-relaxed">
+                L’utilisateur contrôle le son en direct via smartphone ou
+                manette Bluetooth, avec une interaction pensée pour rester
+                simple, expressive et réactive.
               </p>
             </div>
-
           </div>
         </section>
 
-        {/* IMAGE */}
+        {/* IMAGES */}
         <section className="mb-12">
-          <div className="rounded-2xl overflow-hidden border bg-white shadow-sm">
-            <img
-              src="/hackaphone.png"
-              alt="Interface du projet Hackaphone"
-              className="w-full h-auto"
-            />
+          <div className="mb-6">
+            <h2 className="text-2xl font-semibold">Aperçu du projet</h2>
+            <p className="mt-2 text-sm text-slate-500">
+              Cliquez sur une image pour l’agrandir.
+            </p>
           </div>
-          <p className="mt-3 text-sm text-slate-500">
-            Interface graphique et contrôle du méta-instrument.
-          </p>
-        </section>
-        <section className="mb-12">
-          <div className="rounded-2xl overflow-hidden border bg-white shadow-sm">
-            <img
-              src="/hackaphone2.png"
-              alt="Interface du projet Hackaphone"
-              className="w-full h-auto"
-            />
-          </div>
-          <p className="mt-3 text-sm text-slate-500">
-            Interface graphique et contrôle du méta-instrument.
-          </p>
-        </section>
 
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+            {images.map((image) => (
+              <button
+                key={image.src}
+                type="button"
+                onClick={() => setSelectedImage(image.src)}
+                className="overflow-hidden rounded-2xl bg-white p-4 text-left shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+              >
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="max-h-[420px] w-full rounded-xl object-contain"
+                />
+                <p className="mt-3 text-center text-sm text-slate-600">
+                  {image.caption}
+                </p>
+              </button>
+            ))}
+          </div>
+        </section>
 
         {/* APPORTS */}
         <section className="mb-12 bg-white border rounded-2xl p-6 shadow-sm">
-          <h2 className="text-2xl font-semibold mb-4">Apports</h2>
+          <h2 className="text-2xl font-semibold mb-4">Ce que j’ai appris</h2>
 
           <p className="text-slate-600 leading-relaxed">
-            Ce projet m’a permis de travailler sur des systèmes temps réel,
-            d’intégrer des capteurs externes, et de concevoir une interaction
-            homme-machine dans un contexte créatif et technique.
+            J’ai travaillé sur un système temps réel, sur l’intégration de
+            capteurs externes et sur la conception d’une interaction
+            homme-machine dans un contexte à la fois créatif et technique.
           </p>
         </section>
 
@@ -176,8 +193,35 @@ export default function Hackaphone() {
             </span>
           </div>
         </section>
-
       </div>
+
+      {/* Lightbox */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div
+            className="relative w-full max-w-6xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              type="button"
+              onClick={() => setSelectedImage(null)}
+              className="absolute -top-12 right-0 text-3xl font-light text-white transition hover:opacity-80"
+              aria-label="Fermer l’image"
+            >
+              ×
+            </button>
+
+            <img
+              src={selectedImage}
+              alt="Image agrandie"
+              className="max-h-[90vh] w-full rounded-2xl bg-white object-contain"
+            />
+          </div>
+        </div>
+      )}
     </main>
   );
 }

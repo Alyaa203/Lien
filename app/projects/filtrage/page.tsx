@@ -7,7 +7,6 @@ export default function ImageProcessingProject() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const images = [
-
     {
       src: "/img1.png",
       alt: "Filtre passe-bas gaussien",
@@ -28,7 +27,6 @@ export default function ImageProcessingProject() {
       alt: "Second détramage",
       caption: "Second détramage et nettoyage du spectre",
     },
-
   ];
 
   return (
@@ -52,10 +50,8 @@ export default function ImageProcessingProject() {
           </h1>
 
           <p className="max-w-3xl text-lg leading-relaxed text-slate-600">
-            Dans ce projet réalisé en groupe, j’ai participé à la suppression de
-            trames parasites présentes dans une image numérisée, en utilisant des
-            outils de traitement du signal et d’analyse fréquentielle pour isoler
-            puis éliminer les composantes périodiques indésirables.
+            En groupe, nous avons supprimé des trames parasites sur une image numérisée
+            en utilisant l’analyse fréquentielle et des filtres adaptés.
           </p>
         </section>
 
@@ -64,22 +60,18 @@ export default function ImageProcessingProject() {
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <h2 className="mb-3 text-xl font-semibold">Contexte</h2>
             <p className="leading-relaxed text-slate-600">
-              Une trame d’impression apparaît comme un motif périodique de haute
-              fréquence qui dégrade la lisibilité de l’image. Dans le domaine
-              fréquentiel, cette trame se manifeste par des pics localisés. Le
-              projet consistait à exploiter cette signature pour supprimer ces
-              parasites sans détériorer le contenu utile de l’image.
-              </p>
+              Une trame d’impression crée un motif périodique qui dégrade la lecture de l’image.
+              Dans le spectre fréquentiel, ce parasite apparaît sous forme de pics localisés,
+              ce qui permet de le cibler précisément.
+            </p>
           </div>
 
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <h2 className="mb-3 text-xl font-semibold">Objectif</h2>
             <p className="leading-relaxed text-slate-600">
-              Mon objectif était de construire des filtres adaptés pour détecter
-              et supprimer successivement deux trames, puis de vérifier que
-              l’ordre d’application des filtres ne modifie pas le résultat final,
-              avant d’analyser plus finement le contenu fréquentiel réel de
-              l’image.
+              Notre objectif consistait à construire des filtres capables de supprimer
+              deux trames successives, puis à vérifier l’effet du filtrage sur le spectre
+              et sur la qualité visuelle finale.
             </p>
           </div>
         </section>
@@ -93,21 +85,20 @@ export default function ImageProcessingProject() {
               <ul className="list-inside list-disc space-y-2 text-slate-600">
                 <li>Analyse de la FFT de l’image tramée</li>
                 <li>Construction d’un filtre passe-bas gaussien</li>
-                <li>Modulation pour créer un filtre passe-bande ciblé</li>
-                <li>Construction d’un filtre coupe-bande (notch)</li>
+                <li>Création d’un filtre passe-bande par modulation</li>
+                <li>Construction d’un filtre coupe-bande ciblé</li>
                 <li>Application d’un second détramage</li>
                 <li>Vérification expérimentale de la commutativité</li>
-                <li>Comparaison du contenu fréquentiel avant/après filtrage</li>
+                <li>Comparaison du spectre avant et après filtrage</li>
               </ul>
             </div>
 
             <div>
               <p className="leading-relaxed text-slate-600">
-                J’ai participé à l’identification des pics fréquentiels parasites,
-                à la conception des filtres spatiaux et à l’interprétation des
-                résultats. Le travail reposait sur la convolution 2D, l’analyse
-                spectrale par FFT et l’étude de l’impact du filtrage sur la
-                structure fréquentielle des images.
+                J’ai contribué à l’identification des pics parasites, à la conception
+                des filtres et à l’analyse des résultats. Le projet reposait sur la FFT,
+                la convolution 2D et l’étude de l’impact du filtrage sur la structure
+                fréquentielle de l’image.
               </p>
             </div>
           </div>
@@ -119,14 +110,11 @@ export default function ImageProcessingProject() {
 
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <p className="leading-relaxed text-slate-600">
-              Les résultats montrent qu’un premier filtre notch permet de
-              supprimer la trame dominante, puis qu’un second filtrage élimine
-              une composante résiduelle plus discrète. La vérification de la
-              commutativité confirme que l’ordre des deux détramages ne change
-              pas le résultat, à des erreurs numériques près. Enfin, après
-              nettoyage, le spectre de l’image devient plus lisible et met mieux
-              en évidence les vraies structures de la scène, comme les contours
-              et les textures.
+              Le premier filtre notch supprime la trame dominante, puis un second filtrage
+              retire une composante résiduelle plus discrète. Après nettoyage, le spectre
+              devient plus lisible et laisse mieux apparaître les vraies structures de l’image,
+              comme les contours et les textures. Nous avons aussi vérifié que l’ordre des
+              deux détramages ne modifie pas le résultat final, hors petites différences numériques.
             </p>
           </div>
         </section>
@@ -159,6 +147,16 @@ export default function ImageProcessingProject() {
               </button>
             ))}
           </div>
+        </section>
+
+        {/* Apports */}
+        <section className="mb-12 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h2 className="mb-4 text-2xl font-semibold">Ce que j’ai appris</h2>
+          <p className="leading-relaxed text-slate-600">
+            J’ai approfondi le filtrage fréquentiel, la lecture d’un spectre 2D
+            et l’analyse d’images dans le domaine fréquentiel. Ce projet m’a aussi
+            permis de relier théorie du signal et résultat visuel concret.
+          </p>
         </section>
 
         {/* Compétences */}

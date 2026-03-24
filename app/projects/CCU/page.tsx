@@ -36,10 +36,7 @@ export default function CCU() {
           <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
             <h2 className="text-xl font-semibold mb-3">Contexte</h2>
             <p className="text-slate-600 leading-relaxed">
-              Le projet s’inscrit dans une approche de conception centrée utilisateur,
-              avec pour objectif de comprendre des usages réels et de concevoir
-              des solutions adaptées à différents contextes (santé, consommation,
-              organisation quotidienne).
+              Nous avons travaillé en groupe de 4 pour comprendre des usages réels et concevoir des solutions adaptées à différents contextes.
             </p>
           </div>
 

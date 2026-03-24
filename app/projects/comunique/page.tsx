@@ -23,9 +23,8 @@ export default function Comunique() {
           </h1>
 
           <p className="text-lg text-slate-600 max-w-3xl leading-relaxed">
-            Développement d’une application mobile visant à centraliser les
-            informations de la vie étudiante (événements, contacts, annonces)
-            et à simplifier la communication entre étudiants et administration.
+            Nous avons conçu une application mobile pour centraliser la vie étudiante 
+            et simplifier les échanges entre étudiants et administration.
           </p>
         </section>
 
@@ -34,18 +33,16 @@ export default function Comunique() {
           <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
             <h2 className="text-xl font-semibold mb-3">Contexte</h2>
             <p className="text-slate-600 leading-relaxed">
-              La communication au sein de l’école est dispersée entre plusieurs
-              canaux (emails, réseaux, affichage), rendant l’accès à
-              l’information difficile pour les étudiants.
+              L’information circule sur plusieurs canaux : emails, réseaux, affichage. 
+              Résultat : les étudiants perdent du temps à la chercher.
             </p>
           </div>
 
           <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
             <h2 className="text-xl font-semibold mb-3">Objectif</h2>
             <p className="text-slate-600 leading-relaxed">
-              Concevoir une application centralisée permettant de diffuser,
-              organiser et rendre accessibles les informations importantes de
-              la vie étudiante de manière simple et efficace.
+              Concevoir une application claire pour regrouper, organiser et rendre 
+              l’information accessible rapidement.
             </p>
           </div>
         </section>
@@ -57,10 +54,7 @@ export default function Comunique() {
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               <p className="text-slate-600 leading-relaxed mb-4">
-                Le projet a été réalisé en équipe, en suivant une démarche
-                centrée utilisateur (UX). Il inclut des phases de recherche,
-                de conception, de développement mobile et de validation par
-                des tests utilisateurs.
+                Travail en équipe avec une démarche UX complète : comprendre, concevoir, tester, améliorer.
               </p>
             </div>
 
@@ -68,15 +62,15 @@ export default function Comunique() {
               <ul className="space-y-3 text-slate-700">
                 <li className="flex gap-3">
                   <span className="mt-1 h-2.5 w-2.5 rounded-full bg-orange-500"></span>
-                  <span>Analyse du besoin et état de l’art</span>
+                  <span>Analyse du besoin et de l’existant</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="mt-1 h-2.5 w-2.5 rounded-full bg-orange-500"></span>
-                  <span>UX research et maquettage</span>
+                  <span>Conception des parcours et maquettes</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="mt-1 h-2.5 w-2.5 rounded-full bg-orange-500"></span>
-                  <span>Développement mobile (Flutter)</span>
+                  <span>Développement mobile avec Flutter</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="mt-1 h-2.5 w-2.5 rounded-full bg-orange-500"></span>
@@ -95,71 +89,40 @@ export default function Comunique() {
             <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
               <h3 className="text-lg font-semibold mb-2">Fonctionnalités</h3>
               <p className="text-slate-600 leading-relaxed">
-                Mise en place d’un système centralisé incluant un fil
-                d’informations, un calendrier d’événements, un annuaire et des
-                outils de communication avec l’administration.
+                Fil d’actualité, calendrier, annuaire et outils de communication intégrés dans une seule interface.
               </p>
             </div>
 
             <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-              <h3 className="text-lg font-semibold mb-2">Validation utilisateur</h3>
+              <h3 className="text-lg font-semibold mb-2">Tests utilisateurs</h3>
               <p className="text-slate-600 leading-relaxed">
-                Des tests utilisateurs ont permis d’identifier des problèmes
-                d’ergonomie et d’améliorer l’interface, notamment sur la
-                lisibilité et l’accès aux informations.
+                Observation des usages, identification des frictions, amélioration de la navigation et de la lisibilité.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Image */}
+        {/* Images */}
         <section className="mb-12">
-    <div className="flex justify-center gap-6 flex-wrap">
-        
-        <img
-        src="/comunique.png"
-        alt="App 1"
-        className="w-40 rounded-2xl shadow-md"
-        />
-        <img
-        src="/comunique4.png"
-        alt="App 1"
-        className="w-40 rounded-2xl shadow-md"
-        />
-    
+          <div className="flex justify-center gap-6 flex-wrap">
+            <img src="/comunique.png" className="w-40 rounded-2xl shadow-md" />
+            <img src="/comunique4.png" className="w-40 rounded-2xl shadow-md" />
+            <img src="/comunique2.png" className="w-40 rounded-2xl shadow-md" />
+            <img src="/comunique3.png" className="w-40 rounded-2xl shadow-md" />
+            <img src="/c5.png" className="w-40 rounded-2xl shadow-md" />
+          </div>
 
-        <img
-        src="/comunique2.png"
-        alt="App 2"
-        className="w-40 rounded-2xl shadow-md"
-        />
-
-        <img
-        src="/comunique3.png"
-        alt="App 3"
-        className="w-40 rounded-2xl shadow-md"
-        />
-        <img
-        src="/c5.png"
-        alt="App 3"
-        className="w-40 rounded-2xl shadow-md"
-        />
-
-    </div>
-
-    <p className="mt-3 text-sm text-slate-500 text-center">
-        Interfaces de l’application COM’UNIQUE.
-    </p>
-    </section>
+          <p className="mt-3 text-sm text-slate-500 text-center">
+            Interfaces de l’application COM’UNIQUE.
+          </p>
+        </section>
 
         {/* Apports */}
         <section className="mb-12 bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-          <h2 className="text-2xl font-semibold mb-4">Apports du projet</h2>
+          <h2 className="text-2xl font-semibold mb-4">Ce que j’ai appris</h2>
           <p className="text-slate-600 leading-relaxed">
-            Ce projet m’a permis de travailler sur la conception d’un produit
-            complet, depuis l’identification du besoin jusqu’au développement
-            et aux tests utilisateurs. Il m’a également apporté une expérience
-            en développement mobile et en travail collaboratif.
+            J’ai participé à la conception d’un produit complet, du besoin aux tests. 
+            Ce projet m’a appris à travailler en équipe et à améliorer une interface à partir de retours réels.
           </p>
         </section>
 
@@ -181,7 +144,7 @@ export default function Comunique() {
               Tests utilisateurs
             </span>
             <span className="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm">
-              Gestion de projet
+              Travail en équipe
             </span>
           </div>
         </section>
