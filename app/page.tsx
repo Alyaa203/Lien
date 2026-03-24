@@ -21,12 +21,12 @@ const codingProjects: Project[] = [
   },
   {
     href: "/projects/EEG",
-    badge: "Signal Processing",
+    badge: "Traitement du signal",
     badgeColor: "bg-cyan-100 text-cyan-700",
     title: "Analyse de signaux EEG",
     description:
       "Modélisation de l’effet de la musique sur l’activité cérébrale à partir de signaux EEG et d’outils d’analyse fréquentielle.",
-    tech: "Python · FFT · Signal Processing",
+    tech: "Python · FFT · Traitement du signal",
   },
   {
     href: "/projects/TransD",
@@ -35,7 +35,7 @@ const codingProjects: Project[] = [
     title: "Hackaphone – méta-instrument musical",
     description:
       "Système interactif permettant de contrôler et transformer un flux audio en temps réel via smartphone ou manette Bluetooth.",
-    tech: "Python · OSC · Audio Processing",
+    tech: "Python · OSC ",
   },
 ];
 
@@ -74,7 +74,7 @@ const physicsProjects: Project[] = [
     title: "TIPE",
     description:
       "Projet scientifique mené sur un an et demi en classe préparatoire, avec une démarche expérimentale et analytique.",
-    tech: "Matlab · Modélisation · Recherche",
+    tech: "Matlab · Modélisation ",
   },
 ];
 
@@ -95,7 +95,7 @@ const uxProjects: Project[] = [
     title: "Conception centrée utilisateur (CCU)",
     description:
       "Projet mené sur un an intégrant idéation, conception de maquettes et tests utilisateurs. Approche complète de la démarche UX appliquée à plusieurs cas d’étude.",
-    tech: "UX Research · Prototypage · Tests utilisateurs · Figma",
+    tech: "UX · Prototypage · Tests utilisateurs · Figma",
   },
 ];
 
@@ -119,7 +119,7 @@ const matlabProjects: Project[] = [
     title: "Filtrage des images",
     description:
       "Projet de traitement d’image sous Matlab autour de techniques de filtrage et d’amélioration visuelle.",
-    tech: "Matlab · Image Processing",
+    tech: "Matlab · Traitement d'image",
   },
 ];
 

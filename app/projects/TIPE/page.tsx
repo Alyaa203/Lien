@@ -56,12 +56,7 @@ export default function ErosionProject() {
             Érosion des roches calcaires et risque pour les sentiers côtiers
           </h1>
 
-          <p className="max-w-3xl text-lg leading-relaxed text-slate-600">
-            Dans ce projet, j’ai étudié l’érosion des falaises calcaires du GR21
-            en Normandie afin de comprendre les mécanismes physiques et chimiques
-            responsables du recul des falaises et du risque associé pour les
-            chemins de grande randonnée.
-          </p>
+ 
         </section>
 
         {/* Contexte + Objectif */}
