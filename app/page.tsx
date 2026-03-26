@@ -37,18 +37,19 @@ const codingProjects: Project[] = [
       "Système interactif permettant de contrôler et transformer un flux audio en temps réel via smartphone ou manette Bluetooth.",
     tech: "Python · OSC ",
   },
-];
-
-const physicsProjects: Project[] = [
   {
     href: "/projects/schrodinger",
-    badge: "Physique quantique",
+    badge: "Quantique , art et pyhton",
     badgeColor: "bg-indigo-100 text-indigo-700",
     title: "Simulation quantique (Schrödinger)",
     description:
       "Simulation numérique avec calcul des états propres et étude de l’évolution temporelle d’un système quantique.",
     tech: "Python · NumPy · SciPy",
   },
+];
+
+const physicsProjects: Project[] = [
+
   {
     href: "/projects/Subatomique",
     badge: "Physique subatomique",

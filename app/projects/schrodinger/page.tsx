@@ -13,7 +13,7 @@ export default function Schrodinger() {
           ← Retour à l’accueil
         </Link>
 
-        {/* Hero */}
+            {/* Hero */}
         <section className="mb-12">
           <div className="inline-block px-3 py-1 mb-4 rounded-full bg-indigo-100 text-indigo-700 text-sm font-medium">
             Projet de physique computationnelle
@@ -24,14 +24,15 @@ export default function Schrodinger() {
           </h1>
 
           <p className="text-lg md:text-xl text-slate-600 max-w-3xl leading-relaxed">
-            Application interactive permettant d’explorer numériquement les états
-            stationnaires et l’évolution temporelle d’un système quantique à partir
-            d’une discrétisation de l’équation de Schrödinger.
+          Application interactive pour l'exploration numérique des états stationnaires et de l’évolution temporelle e d'un système quantique, basée sur une discrétisation de l'équation de Schrödinger.
           </p>
 
-          <div className="flex flex-wrap gap-3 mt-8">
+       
+            <div className="mt-8">
+           {/* Ligne des boutons */}
+          <div className="flex flex-wrap gap-6 items-center">
             <a
-              href="https://ton-app.streamlit.app"
+              href="https://physics-projects-hlqh9cdtnebsektfcyi3s8.streamlit.app"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-3 rounded-xl bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition shadow-sm"
@@ -43,11 +44,17 @@ export default function Schrodinger() {
               href="https://github.com/Alyaa203/physics-projects.git"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-3 rounded-xl border border-slate-300 bg-white text-slate-800 font-medium hover:bg-slate-100 transition"
+              className="px-5 py-3 rounded-xl bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition shadow-sm"
             >
               Voir le code
             </a>
           </div>
+
+          {/* Message en dessous */}
+          <p className="text-sm text-slate-500 mt-3">
+            Remarque: Le chargement peut prendre quelques minutes
+          </p>
+        </div>
         </section>
 
         {/* Image principale */}
