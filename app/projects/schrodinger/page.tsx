@@ -32,7 +32,7 @@ export default function Schrodinger() {
            {/* Ligne des boutons */}
           <div className="flex flex-wrap gap-6 items-center">
             <a
-              href="https://physics-projects-hlqh9cdtnebsektfcyi3s8.streamlit.app"
+              href="https://gnm4pxwnrpb6cy3syst6sn.streamlit.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-3 rounded-xl bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition shadow-sm"
@@ -41,7 +41,7 @@ export default function Schrodinger() {
             </a>
 
             <a
-              href="https://github.com/Alyaa203/physics-projects.git"
+              href="https://github.com/Alyaa203/P2i"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-3 rounded-xl bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition shadow-sm"
