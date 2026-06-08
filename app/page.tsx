@@ -71,6 +71,15 @@ const codingProjects: Project[] = [
       "Système interactif permettant de contrôler et transformer un flux audio en temps réel via smartphone ou manette Bluetooth.",
     tech: "Python · OSC",
   },
+  {
+    href: "/projects/MOBI",
+    badge: "Développement mobile · React",
+    badgeColor: "bg-purple-100 text-purple-700",
+    title: "Jeu de combat de cartes – Projet MOBI",
+    description:
+      "Application mobile de jeu de cartes compétitif (inspiré de Hearthstone) développée en ReactJS : authentification Google, collection de cartes via API externe, construction de deck et combats PvP en temps réel synchronisés via Firebase.",
+    tech: "ReactJS · Firebase · MaterialUI · API externe · Netlify",
+  },
 ];
 
 const physicsProjects: Project[] = [
