@@ -43,7 +43,7 @@ export default function StatistiqueProject() {
     <main className="min-h-screen bg-slate-50 text-slate-900">
       <div className="mx-auto max-w-6xl px-6 py-12 md:px-10 md:py-16">
         <Link
-          href="/"
+          href="/projets"
           className="mb-8 inline-flex items-center text-sm text-slate-500 transition hover:text-indigo-600"
         >
           ← Retour à l’accueil

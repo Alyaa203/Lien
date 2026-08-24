@@ -6,7 +6,7 @@ export default function Comunique() {
       <div className="max-w-6xl mx-auto px-6 py-12 md:px-10 md:py-16">
         
         <Link
-          href="/"
+          href="/projets"
           className="inline-flex items-center text-sm text-slate-500 hover:text-orange-600 transition mb-8"
         >
           ← Retour à l’accueil

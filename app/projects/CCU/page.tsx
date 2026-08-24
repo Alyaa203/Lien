@@ -7,7 +7,7 @@ export default function CCU() {
         
         {/* Retour */}
         <Link
-          href="/"
+          href="/projets"
           className="inline-flex items-center text-sm text-slate-500 hover:text-indigo-600 transition mb-8"
         >
           ← Retour à l’accueil

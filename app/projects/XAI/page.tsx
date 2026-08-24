@@ -12,7 +12,7 @@ export default function XAIProject() {
 
         {/* Retour */}
         <Link
-          href="/"
+          href="/projets"
           className="inline-flex items-center text-sm text-slate-500 hover:text-indigo-600 transition mb-8"
         >
           ← Retour à l’accueil
@@ -21,7 +21,8 @@ export default function XAIProject() {
         {/* HEADER */}
         <section className="mb-12">
           <div className="inline-block px-3 py-1 mb-4 rounded-full bg-indigo-100 text-indigo-700 text-sm font-medium">
-            Stage de recherche – Sorbonne Université / CNRS
+            Stage de recherche (1 mois, 2025) – Laboratoire de Chimie Physique
+            Matière et Rayonnement, CNRS / Sorbonne Université
           </div>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-5">
@@ -30,7 +31,8 @@ export default function XAIProject() {
 
           <p className="text-lg text-slate-600 max-w-3xl leading-relaxed">
             J’ai travaillé sur l’interprétation de modèles de deep learning appliqués
-            à des données hyperspectrales pour identifier des pigments dans des œuvres d’art.
+            à des données hyperspectrales pour identifier des pigments dans des œuvres d’art,
+            avec une présentation orale des résultats lors d’un workshop interdisciplinaire.
           </p>
         </section>
 
