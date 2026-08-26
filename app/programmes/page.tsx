@@ -12,12 +12,12 @@ const timeline = [
     date: "2025",
   },
   {
-    title: "Classe préparatoire aux grandes écoles — Physique-Chimie (PC)",
+    title: "Classe préparatoire aux grandes écoles, Physique-Chimie (PC)",
     place: "Lycée Jacques Amyot, Melun",
     date: "2023",
   },
   {
-    title: "Classe préparatoire aux grandes écoles — PCSI",
+    title: "Classe préparatoire aux grandes écoles, PCSI",
     place: "Lycée Jacques Amyot, Melun",
     date: "2022",
   },
@@ -43,8 +43,9 @@ export default function Programmes() {
             Programmes de formation
           </h1>
           <p className="text-lg text-slate-600 max-w-3xl leading-relaxed">
-            Élève-ingénieure en 2ème année à l&apos;ENSC (Bordeaux INP), licence de
-            physique (spécialité physique quantique) obtenue en parallèle.
+            Élève-ingénieure en 3ème année (Bac+5) à l&apos;ENSC (Bordeaux INP),
+            licence de physique (spécialité physique quantique) obtenue en
+            parallèle.
           </p>
         </section>
 
@@ -82,41 +83,26 @@ export default function Programmes() {
             <h2 className="text-xl font-bold text-slate-900 mb-3">Physique quantique</h2>
             <p className="text-slate-600 leading-relaxed">
               Licence de Physique, spécialité physique quantique, obtenue à
-              l&apos;Université de Bordeaux en parallèle du cursus d&apos;ingénieur — socle
-              en mécanique quantique, modélisation numérique et physique des
-              systèmes complexes.
+              l&apos;Université de Bordeaux en parallèle du cursus d&apos;ingénieur. Elle
+              m&apos;a donné un socle solide en mécanique quantique, modélisation
+              numérique et physique des systèmes complexes.
             </p>
           </div>
         </section>
 
-        <section className="mb-6 grid md:grid-cols-2 gap-6">
-          <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-            <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-500 mb-4">
-              Structure de la formation
-            </h2>
-            <p className="text-slate-600 leading-relaxed">
-              Deux premières années organisées autour d&apos;enseignements
-              thématiques communs (cognitique, fondamentaux scientifiques,
-              formation générale et vie de l&apos;entreprise), puis une 3ème année
-              de spécialisation au choix : augmentation et autonomie,
-              intelligence artificielle, systèmes cognitifs hybrides, ou{" "}
-              <span className="font-medium text-slate-900">robotique et apprentissage</span>{" "}
-              — chacune conclue par un projet de fin d&apos;études.
-            </p>
-          </div>
-
-          <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-            <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-500 mb-4">
-              Stages &amp; expérience internationale
-            </h2>
-            <p className="text-slate-600 leading-relaxed">
-              Trois stages jalonnent le cursus — initiation (1ère année, ≥ 4
-              semaines), application (2ème année, ≥ 12 semaines) et fin
-              d&apos;études (3ème année, ≥ 5 mois) — pour un minimum cumulé de 9
-              mois, ainsi qu&apos;un minimum de 17 semaines d&apos;expérience à
-              l&apos;international exigé pour l&apos;obtention du diplôme.
-            </p>
-          </div>
+        <section className="mb-6 bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-500 mb-4">
+            Structure de la formation
+          </h2>
+          <p className="text-slate-600 leading-relaxed">
+            Deux premières années organisées autour d&apos;enseignements
+            thématiques communs (cognitique, fondamentaux scientifiques,
+            formation générale et vie de l&apos;entreprise), puis une 3ème année
+            de spécialisation au choix : augmentation et autonomie,
+            intelligence artificielle, systèmes cognitifs hybrides, ou{" "}
+            <span className="font-medium text-slate-900">robotique et apprentissage</span>{" "}
+            (la mienne). Chacune se conclut par un projet de fin d&apos;études.
+          </p>
         </section>
 
         <section className="mb-6 bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
@@ -139,16 +125,16 @@ export default function Programmes() {
 
         <section className="mb-6 bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
           <div className="inline-block px-3 py-1 mb-4 rounded-full bg-teal-100 text-teal-700 text-sm font-medium">
-            3ème année · 2026 – 2027 · À la recherche d&apos;une alternance
+            3ème année · 2026-2027 · À la recherche d&apos;une alternance
           </div>
           <h2 className="text-xl font-bold text-slate-900 mb-3">
             Spécialisation Robotique et apprentissage
           </h2>
           <p className="text-slate-600 leading-relaxed mb-6">
             Passionnée par la robotique et l&apos;interaction humain-robot, je me
-            spécialiserai à l&apos;ENSEIRB-MATMECA (Bordeaux INP) dès l&apos;année
-            prochaine, en contrat de professionnalisation (alternance
-            école/entreprise) — un semestre organisé en cinq unités
+            spécialise cette année à l&apos;ENSEIRB-MATMECA (Bordeaux INP), en
+            contrat de professionnalisation (alternance école/entreprise).
+            C&apos;est un semestre organisé en cinq unités
             d&apos;enseignement, avec des projets menés en lien avec des
             partenaires industriels (Aquitaine Robotics, festival Robot
             Makers&apos; Day).

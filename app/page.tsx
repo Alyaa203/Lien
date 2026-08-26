@@ -63,11 +63,11 @@ export default function Home() {
               Alyaa Saab
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-relaxed text-slate-600">
-              Élève-ingénieure en 2ème année à l&apos;École nationale supérieure de
-              cognitique (ENSC), licence de physique (spécialité physique
-              quantique) obtenue en parallèle — à la recherche d&apos;une alternance
-              en Robotique, Systèmes embarqués, IA, Traitement du signal et
-              Simulation numérique.
+              Élève-ingénieure en 3ème année (Bac+5) à l&apos;École nationale
+              supérieure de cognitique (ENSC), et titulaire d&apos;une licence de
+              physique obtenue en parallèle. Je recherche actuellement une
+              alternance ou un stage de fin d&apos;études en Robotique, Systèmes
+              embarqués, IA, Traitement du signal ou Simulation numérique.
             </p>
           </div>
         </section>
@@ -79,8 +79,8 @@ export default function Home() {
           </h2>
           <p className="max-w-3xl leading-relaxed text-slate-600">
             Passionnée par la robotique et l&apos;interaction humain-robot, je me
-            spécialiserai à l&apos;ENSEIRB-MATMECA dès l&apos;année prochaine pour
-            concevoir des systèmes robotiques intelligents. Je m&apos;intéresse au
+            spécialise cette année à l&apos;ENSEIRB-MATMECA pour concevoir des
+            systèmes robotiques intelligents. Je m&apos;intéresse au
             traitement du signal, aux systèmes embarqués et à l&apos;intelligence
             artificielle appliquée, à la croisée de la physique et de
             l&apos;ingénierie. Je réalise actuellement un stage de recherche en
@@ -156,7 +156,7 @@ export default function Home() {
 
         {/* Footer */}
         <footer className="py-8 text-center text-sm text-slate-500">
-          © 2026 Alyaa Saab — Portfolio personnel
+          © 2026 Alyaa Saab, Portfolio personnel
         </footer>
       </div>
     </main>

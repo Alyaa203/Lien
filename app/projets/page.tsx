@@ -20,8 +20,8 @@ const experienceProjects: Project[] = [
     status: "current",
     title: "Reservoir Computing optique à base de fibres",
     description:
-      "Stage de recherche (3 mois, en cours) à l'Institut d'Optique Graduate School en collaboration avec l'INRIA : développement d'un système de calcul neuromorphique basé sur des fibres optiques, étude des réservoirs optiques comme alternative aux implémentations numériques, modélisation et validation via des jumeaux numériques.",
-    tech: "Reservoir Computing · Fibres optiques · Jumeaux numériques · Python",
+      "Stage de recherche (3 mois, en cours) à l'Institut d'Optique Graduate School en collaboration avec l'INRIA : développement d'un système de calcul neuromorphique basé sur des fibres optiques, conception d'une interface de pilotage (MATLAB), et modélisation par IA (réseau de neurones, régression Ridge) pour valider le montage.",
+    tech: "Reservoir Computing · Fibres optiques · IA · Régression Ridge · MATLAB · Python",
   },
   {
     href: "/projects/XAI",
@@ -42,7 +42,7 @@ const signalProjects: Project[] = [
     tone: "indigo",
     title: "Simulation numérique de l'équation de Schrödinger",
     description:
-      "Solveur Python de l'équation de Schrödinger dépendant du temps via la méthode Split-Step Fourier (FFT) — propagation de paquets d'onde et analyse spectrale dans le domaine fréquentiel.",
+      "Solveur Python de l'équation de Schrödinger dépendant du temps via la méthode Split-Step Fourier (FFT), pour la propagation de paquets d'onde et l'analyse spectrale dans le domaine fréquentiel.",
     tech: "Python · NumPy · SciPy · FFT",
   },
   {
@@ -60,7 +60,7 @@ const signalProjects: Project[] = [
     tone: "sky",
     title: "Diffraction en optique",
     description:
-      "Étude expérimentale et numérique des phénomènes de diffraction — modélisation de la propagation d'ondes et analyse des distributions d'intensité.",
+      "Étude expérimentale et numérique des phénomènes de diffraction, avec modélisation de la propagation d'ondes et analyse des distributions d'intensité.",
     tech: "Python · Modélisation · Physique des ondes",
   },
   {
@@ -80,7 +80,7 @@ const codingProjects: Project[] = [
     href: "/projects/TransD",
     badge: "Audio interactif",
     tone: "pink",
-    title: "Hackaphone – méta-instrument musical",
+    title: "Hackaphone, méta-instrument musical",
     description:
       "Système interactif permettant de contrôler et transformer un flux audio en temps réel via smartphone ou manette Bluetooth.",
     tech: "Python · OSC",
@@ -89,32 +89,23 @@ const codingProjects: Project[] = [
     href: "/projects/MOBI",
     badge: "Développement mobile · React",
     tone: "purple",
-    title: "Jeu de combat de cartes – Projet MOBI",
+    title: "Jeu de combat de cartes, Projet MOBI",
     description:
       "Application mobile de jeu de cartes compétitif (inspiré de Hearthstone) développée en ReactJS : authentification Google, collection de cartes via API externe, construction de deck et combats PvP en temps réel synchronisés via Firebase.",
     tech: "ReactJS · Firebase · MaterialUI · API externe · Netlify",
   },
 ];
 
-// ── Physique et modélisation scientifique ───────────────────────────────────
-const physicsProjects: Project[] = [
-  {
-    href: "/projects/Subatomique",
-    badge: "Physique subatomique",
-    tone: "violet",
-    title: "Compteur de Müller en subatomique",
-    description:
-      "Travaux pratiques autour de mesures expérimentales et d'analyses statistiques sur un compteur de Müller.",
-    tech: "Python · Analyse de données",
-  },
+// ── Modélisation et automatique ─────────────────────────────────────────────
+const modelingProjects: Project[] = [
   {
     href: "/projects/TIPE",
     badge: "Projet long",
     tone: "fuchsia",
-    title: "TIPE — Modélisation d'un système dynamique",
+    title: "TIPE : modélisation d'un système dynamique",
     description:
-      "Étude expérimentale de l'érosion des falaises d'Étretat et développement d'un modèle physique décrivant la dynamique du phénomène.",
-    tech: "Matlab · Modélisation",
+      "Étude expérimentale de l'érosion des falaises d'Étretat et développement d'un modèle numérique décrivant la dynamique du phénomène.",
+    tech: "Matlab · Modélisation · Automatique",
   },
 ];
 
@@ -124,7 +115,7 @@ const uxProjects: Project[] = [
     href: "/projects/comunique",
     badge: "Application mobile",
     tone: "orange",
-    title: "COM'UNIQUE – plateforme de communication étudiante",
+    title: "COM'UNIQUE, plateforme de communication étudiante",
     description:
       "Développement d'une application mobile visant à centraliser les informations de la vie étudiante : événements, annuaire, communication avec l'administration.",
     tech: "Flutter · Dart · UX Design · Tests utilisateurs",
@@ -157,7 +148,7 @@ const navItems = [
   { label: "Expérience professionnelle", href: "#experience" },
   { label: "Traitement du signal", href: "#signal" },
   { label: "Programmation", href: "#coding" },
-  { label: "Physique", href: "#physics" },
+  { label: "Modélisation", href: "#modeling" },
   { label: "UX Design", href: "#ux" },
   { label: "Statistiques", href: "#stats" },
 ];
@@ -259,7 +250,7 @@ export default function Projets() {
         <ProjectSection
           id="signal"
           title="Traitement numérique du signal et modélisation"
-          description="Analyse fréquentielle, FFT, filtrage et modélisation de systèmes physiques — en Python et Matlab."
+          description="Analyse fréquentielle, FFT, filtrage et modélisation de systèmes physiques, en Python et Matlab."
           projects={signalProjects}
         />
 
@@ -271,10 +262,10 @@ export default function Projets() {
         />
 
         <ProjectSection
-          id="physics"
-          title="Physique et modélisation scientifique"
-          description="Projets liés à la physique subatomique, optique et modélisation numérique."
-          projects={physicsProjects}
+          id="modeling"
+          title="Modélisation et automatique"
+          description="Projets de modélisation numérique de systèmes dynamiques."
+          projects={modelingProjects}
         />
 
         <ProjectSection

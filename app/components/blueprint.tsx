@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-// ── Composants partagés — style professionnel sobre ─────────────────────────
+// Composants partagés, style professionnel sobre
 // Cartes blanches arrondies, badges en pastille colorée, typographie standard :
 // cohérent avec le reste des pages projets du portfolio.
 

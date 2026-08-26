@@ -33,11 +33,11 @@ export default function Hackaphone() {
         {/* HEADER */}
         <section className="mb-12">
           <div className="inline-block px-3 py-1 mb-4 rounded-full bg-indigo-100 text-indigo-700 text-sm font-medium">
-            Projet interactif – audio & temps réel
+            Projet interactif, audio et temps réel
           </div>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-5">
-            Hackaphone – méta-instrument musical interactif
+            Hackaphone, méta-instrument musical interactif
           </h1>
 
           <p className="text-lg text-slate-600 max-w-3xl leading-relaxed">

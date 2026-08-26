@@ -20,7 +20,7 @@ export default function MOBI() {
           </div>
 
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-5">
-            Jeu de combat de cartes – Projet MOBI
+            Jeu de combat de cartes, Projet MOBI
           </h1>
 
           <p className="text-lg md:text-xl text-slate-600 max-w-3xl leading-relaxed">
@@ -73,7 +73,7 @@ export default function MOBI() {
             <p className="text-slate-600 leading-relaxed">
               Développer un jeu de cartes PvP jouable sur mobile, où chaque joueur
               constitue son deck, s'authentifie via Google, et affronte un adversaire
-              en temps réel — les cartes, les points de vie et les tours étant
+              en temps réel, avec les cartes, les points de vie et les tours
               synchronisés via Firebase.
             </p>
           </div>

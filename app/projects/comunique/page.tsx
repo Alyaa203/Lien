@@ -19,7 +19,7 @@ export default function Comunique() {
           </div>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-5">
-            COM’UNIQUE – plateforme de communication étudiante
+            COM’UNIQUE, plateforme de communication étudiante
           </h1>
 
           <p className="text-lg text-slate-600 max-w-3xl leading-relaxed">

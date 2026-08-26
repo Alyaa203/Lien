@@ -1,11 +1,6 @@
-"use client";
-
 import Link from "next/link";
-import { useState } from "react";
 
 export default function XAIProject() {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
-
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900">
       <div className="max-w-6xl mx-auto px-6 py-12 md:px-10 md:py-16">
@@ -21,7 +16,7 @@ export default function XAIProject() {
         {/* HEADER */}
         <section className="mb-12">
           <div className="inline-block px-3 py-1 mb-4 rounded-full bg-indigo-100 text-indigo-700 text-sm font-medium">
-            Stage de recherche (1 mois, 2025) – Laboratoire de Chimie Physique
+            Stage de recherche (1 mois, 2025), Laboratoire de Chimie Physique
             Matière et Rayonnement, CNRS / Sorbonne Université
           </div>
 
@@ -35,8 +30,6 @@ export default function XAIProject() {
             avec une présentation orale des résultats lors d’un workshop interdisciplinaire.
           </p>
         </section>
-
-
 
         {/* CONTEXTE */}
         <section className="grid md:grid-cols-2 gap-6 mb-12">
@@ -122,25 +115,24 @@ export default function XAIProject() {
 
           </div>
         </section>
-                {/* IMAGE AVEC ZOOM */}
-                <section className="mb-12">
-          <button
-            onClick={() => setSelectedImage("/CNN.png")}
-            className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:shadow-xl"
-          >
-            <img
-              src="/CNN.png"
-              alt="Architecture du modèle CNN"
-              className="w-full h-auto object-contain"
-            />
-          </button>
 
-          <p className="mt-3 text-sm text-slate-500">
-            Résultats obtenues 
+        {/* Soutenance */}
+        <section className="mb-12 bg-white border rounded-2xl p-6 md:p-8 shadow-sm">
+          <h2 className="text-2xl font-semibold mb-3">Présentation de soutenance</h2>
+          <p className="text-slate-600 leading-relaxed mb-5">
+            Support complet de la soutenance de stage (25 juin 2025) : contexte,
+            objectifs, méthodologie SHAP et LIME, résultats sur les modèles CNN
+            et DNN, discussion et perspectives.
           </p>
+          <a
+            href="/xai-soutenance.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition shadow-sm"
+          >
+            Voir la présentation (PDF)
+          </a>
         </section>
-
-
 
         {/* TECH */}
         <section className="bg-white border rounded-2xl p-6 shadow-sm">
@@ -158,31 +150,6 @@ export default function XAIProject() {
         </section>
 
       </div>
-
-      {/* LIGHTBOX */}
-      {selectedImage && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
-          onClick={() => setSelectedImage(null)}
-        >
-          <div
-            className="relative w-full max-w-5xl"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              onClick={() => setSelectedImage(null)}
-              className="absolute -top-12 right-0 text-white text-3xl"
-            >
-              ×
-            </button>
-
-            <img
-              src={selectedImage}
-              className="w-full max-h-[90vh] object-contain rounded-2xl bg-white"
-            />
-          </div>
-        </div>
-      )}
     </main>
   );
 }
