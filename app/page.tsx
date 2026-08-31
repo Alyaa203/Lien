@@ -17,13 +17,6 @@ const tabs: TabTile[] = [
     badgeColor: "bg-emerald-100 text-emerald-700",
   },
   {
-    href: "/cv",
-    title: "CV",
-    description: "Mon curriculum vitae complet, consultable en ligne ou à télécharger.",
-    badge: "Accès rapide",
-    badgeColor: "bg-slate-100 text-slate-700",
-  },
-  {
     href: "/certificats",
     title: "Certificats",
     description: "Mes formations complémentaires certifiantes.",
@@ -78,11 +71,11 @@ export default function Home() {
             Un mot sur moi
           </h2>
           <p className="max-w-3xl leading-relaxed text-slate-600">
-            Passionnée par la robotique et l&apos;interaction humain-robot, je me
-            spécialise cette année à l&apos;ENSEIRB-MATMECA pour concevoir des
-            systèmes robotiques intelligents. Je m&apos;intéresse au
-            traitement du signal, aux systèmes embarqués et à l&apos;intelligence
-            artificielle appliquée, à la croisée de la physique et de
+            Passionnée par la robotique, l&apos;aérodynamique et l&apos;intelligence
+            artificielle, je me spécialise cette année à l&apos;ENSEIRB-MATMECA
+            pour concevoir des systèmes robotiques intelligents. Je
+            m&apos;intéresse au traitement du signal, aux systèmes embarqués et
+            à l&apos;IA appliquée, à la croisée de la physique et de
             l&apos;ingénierie. Je réalise actuellement un stage de recherche en
             reservoir computing optique à l&apos;Institut d&apos;Optique Graduate School,
             en collaboration avec l&apos;INRIA. Aéronautique, spatial, guitare et
@@ -92,7 +85,7 @@ export default function Home() {
 
         {/* Tabs vers les autres pages */}
         <section className="mb-16">
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-6 md:grid-cols-3">
             {tabs.map((tab) => (
               <Link key={tab.href} href={tab.href} className="block h-full">
                 <div className="group h-full cursor-pointer rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl md:p-8">
