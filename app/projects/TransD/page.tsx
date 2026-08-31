@@ -41,9 +41,7 @@ export default function Hackaphone() {
           </h1>
 
           <p className="text-lg text-slate-600 max-w-3xl leading-relaxed">
-            En groupe, nous avons développé un système interactif capable de
-            contrôler et transformer la musique en temps réel à l’aide d’un
-            smartphone ou d’une manette Bluetooth via OSC.
+            En groupe, un système interactif pour contrôler et transformer la musique en temps réel via smartphone ou manette Bluetooth.
           </p>
         </section>
 
@@ -52,18 +50,14 @@ export default function Hackaphone() {
           <div className="bg-white border rounded-2xl p-6 shadow-sm">
             <h2 className="text-xl font-semibold mb-3">Contexte</h2>
             <p className="text-slate-600 leading-relaxed">
-              Ce projet explore la création d’un instrument numérique interactif
-              capable de manipuler un flux audio en temps réel, dans une logique
-              proche d’un contrôleur DJ ou d’un outil de live performance.
+              Un instrument numérique interactif, dans une logique proche d’un contrôleur DJ ou de live performance.
             </p>
           </div>
 
           <div className="bg-white border rounded-2xl p-6 shadow-sm">
             <h2 className="text-xl font-semibold mb-3">Objectif</h2>
             <p className="text-slate-600 leading-relaxed">
-              L’objectif consistait à contrôler plusieurs paramètres audio à
-              partir de capteurs externes, puis à transformer le son en temps
-              réel de façon fluide et intuitive.
+              Contrôler plusieurs paramètres audio à partir de capteurs externes, de façon fluide et intuitive.
             </p>
           </div>
         </section>
@@ -75,10 +69,7 @@ export default function Hackaphone() {
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               <p className="text-slate-600 leading-relaxed">
-                Les données issues du smartphone ou de la manette Bluetooth
-                transitent via le protocole OSC vers un programme Python chargé
-                de traiter le signal audio en temps réel et de mapper les gestes
-                utilisateur à différents effets.
+                Les données transitent via OSC vers un programme Python qui traite le signal audio et mappe les gestes à des effets.
               </p>
             </div>
 
@@ -113,18 +104,14 @@ export default function Hackaphone() {
             <div className="bg-white border rounded-2xl p-6 shadow-sm">
               <h3 className="text-lg font-semibold mb-2">Effets audio</h3>
               <p className="text-slate-600 leading-relaxed">
-                Le système permet de modifier le signal avec plusieurs effets,
-                comme le filtrage fréquentiel, la distorsion, le chorus, l’écho
-                et la réverbération.
+                Filtrage fréquentiel, distorsion, chorus, écho et réverbération.
               </p>
             </div>
 
             <div className="bg-white border rounded-2xl p-6 shadow-sm">
               <h3 className="text-lg font-semibold mb-2">Interaction utilisateur</h3>
               <p className="text-slate-600 leading-relaxed">
-                L’utilisateur contrôle le son en direct via smartphone ou
-                manette Bluetooth, avec une interaction pensée pour rester
-                simple, expressive et réactive.
+                Contrôle du son en direct via smartphone ou manette, pensé pour rester simple et réactif.
               </p>
             </div>
           </div>
@@ -158,17 +145,6 @@ export default function Hackaphone() {
               </button>
             ))}
           </div>
-        </section>
-
-        {/* APPORTS */}
-        <section className="mb-12 bg-white border rounded-2xl p-6 shadow-sm">
-          <h2 className="text-2xl font-semibold mb-4">Ce que j’ai appris</h2>
-
-          <p className="text-slate-600 leading-relaxed">
-            J’ai travaillé sur un système temps réel, sur l’intégration de
-            capteurs externes et sur la conception d’une interaction
-            homme-machine dans un contexte à la fois créatif et technique.
-          </p>
         </section>
 
         {/* TECH */}

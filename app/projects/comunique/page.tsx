@@ -33,16 +33,14 @@ export default function Comunique() {
           <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
             <h2 className="text-xl font-semibold mb-3">Contexte</h2>
             <p className="text-slate-600 leading-relaxed">
-              L’information circule sur plusieurs canaux : emails, réseaux, affichage. 
-              Résultat : les étudiants perdent du temps à la chercher.
+              L’information circule sur trop de canaux (emails, réseaux, affichage), les étudiants perdent du temps à la chercher.
             </p>
           </div>
 
           <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
             <h2 className="text-xl font-semibold mb-3">Objectif</h2>
             <p className="text-slate-600 leading-relaxed">
-              Concevoir une application claire pour regrouper, organiser et rendre 
-              l’information accessible rapidement.
+              Regrouper et organiser l’information dans une application claire.
             </p>
           </div>
         </section>
@@ -114,15 +112,6 @@ export default function Comunique() {
 
           <p className="mt-3 text-sm text-slate-500 text-center">
             Interfaces de l’application COM’UNIQUE.
-          </p>
-        </section>
-
-        {/* Apports */}
-        <section className="mb-12 bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-          <h2 className="text-2xl font-semibold mb-4">Ce que j’ai appris</h2>
-          <p className="text-slate-600 leading-relaxed">
-            J’ai participé à la conception d’un produit complet, du besoin aux tests. 
-            Ce projet m’a appris à travailler en équipe et à améliorer une interface à partir de retours réels.
           </p>
         </section>
 

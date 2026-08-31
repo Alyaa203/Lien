@@ -24,10 +24,7 @@ export default function MOBI() {
           </h1>
 
           <p className="text-lg md:text-xl text-slate-600 max-w-3xl leading-relaxed">
-            Application mobile de jeu de cartes compétitif inspiré de Hearthstone,
-            développée en ReactJS. Deux joueurs s'affrontent en temps réel depuis
-            leur téléphone : constitution d'un deck, authentification Google et
-            synchronisation des combats via Firebase.
+            Jeu de cartes compétitif inspiré de Hearthstone, où deux joueurs s'affrontent en temps réel via Firebase.
           </p>
 
           <div className="mt-8">
@@ -61,20 +58,14 @@ export default function MOBI() {
           <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
             <h2 className="text-xl font-semibold mb-3">Contexte</h2>
             <p className="text-slate-600 leading-relaxed">
-              Projet réalisé en binôme dans le cadre du cours de développement mobile
-              à l'ENSC. L'objectif était de concevoir une application de jeu
-              multijoueur en temps réel, en respectant des exigences techniques
-              précises : architecture React, intégration Firebase et API externe.
+              Projet en binôme pour le cours de développement mobile à l'ENSC : architecture React, Firebase et API externe.
             </p>
           </div>
 
           <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
             <h2 className="text-xl font-semibold mb-3">Objectif</h2>
             <p className="text-slate-600 leading-relaxed">
-              Développer un jeu de cartes PvP jouable sur mobile, où chaque joueur
-              constitue son deck, s'authentifie via Google, et affronte un adversaire
-              en temps réel, avec les cartes, les points de vie et les tours
-              synchronisés via Firebase.
+              Un jeu de cartes PvP jouable sur mobile, avec deck, authentification Google et combats synchronisés en temps réel.
             </p>
           </div>
         </section>
@@ -85,17 +76,8 @@ export default function MOBI() {
 
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <p className="text-slate-600 leading-relaxed mb-4">
-                Chaque joueur constitue un deck de 10 cartes uniques, chacune dotée
-                de statistiques d'Attaque (ATK) et de Défense (DEF). La partie
-                commence avec 5 Points de Vie par joueur. Le premier joueur est
-                désigné aléatoirement.
-              </p>
               <p className="text-slate-600 leading-relaxed">
-                À chaque tour, le joueur actif choisit une carte de son terrain pour
-                attaquer. L'adversaire peut bloquer avec une de ses cartes ou encaisser
-                les dégâts directement. Les cartes impliquées dans un clash sont
-                toujours défaussées.
+                Deck de 10 cartes (ATK/DEF), 5 PV par joueur. À chaque tour, le joueur actif attaque, l'adversaire bloque ou encaisse.
               </p>
             </div>
 
@@ -134,34 +116,28 @@ export default function MOBI() {
             <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
               <h3 className="text-lg font-semibold mb-2">Authentification & Profil</h3>
               <p className="text-slate-600 leading-relaxed">
-                Connexion via Google (Firebase Auth). Chaque joueur possède un profil
-                persistant avec son deck sauvegardé dans Firebase.
+                Connexion via Google, profil persistant sauvegardé dans Firebase.
               </p>
             </div>
 
             <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
               <h3 className="text-lg font-semibold mb-2">Collection de cartes</h3>
               <p className="text-slate-600 leading-relaxed">
-                Les cartes sont alimentées par une API externe. Leurs statistiques ATK/DEF
-                sont générées aléatoirement une seule fois et persistées dans Firebase,
-                communes à tous les joueurs.
+                Cartes alimentées par une API externe, statistiques ATK/DEF communes à tous les joueurs.
               </p>
             </div>
 
             <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
               <h3 className="text-lg font-semibold mb-2">Construction du deck</h3>
               <p className="text-slate-600 leading-relaxed">
-                Interface de sélection permettant de composer son deck de 10 cartes
-                avant chaque partie, sauvegardé en temps réel dans Firebase.
+                Sélection de 10 cartes avant chaque partie, sauvegardée en temps réel.
               </p>
             </div>
 
             <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
               <h3 className="text-lg font-semibold mb-2">Combat PvP en temps réel</h3>
               <p className="text-slate-600 leading-relaxed">
-                Les deux joueurs rejoignent la même partie via Firebase. L'état du combat
-                (joueur actif, PV, cartes sur le terrain) est synchronisé en temps réel
-                entre les deux appareils.
+                État du combat synchronisé en temps réel entre les deux appareils via Firebase.
               </p>
             </div>
           </div>

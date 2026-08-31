@@ -23,7 +23,7 @@ export default function EEGMusic() {
           </h1>
 
           <p className="text-lg text-slate-600 max-w-3xl leading-relaxed">
-            Nous avons étudié l’effet de la musique sur l’activité cérébrale à partir de signaux EEG, avec acquisition, prétraitement et analyse fréquentielle.
+            Étude de l’effet de la musique sur l’activité cérébrale à partir de signaux EEG.
           </p>
         </section>
 
@@ -32,14 +32,14 @@ export default function EEGMusic() {
           <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
             <h2 className="text-xl font-semibold mb-3">Contexte</h2>
             <p className="text-slate-600 leading-relaxed">
-              Ce projet nous a permis d’explorer l’analyse de signaux physiologiques dans un cadre expérimental, en comparant l’activité cérébrale avec et sans musique.
+              Comparer l’activité cérébrale avec et sans stimulation musicale.
             </p>
           </div>
 
           <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
             <h2 className="text-xl font-semibold mb-3">Objectif</h2>
             <p className="text-slate-600 leading-relaxed">
-              Mettre en place un protocole EEG, extraire des indicateurs fréquentiels pertinents et observer les liens entre stimulus musical et activité cérébrale.
+              Extraire des indicateurs fréquentiels pertinents et observer les liens avec le stimulus musical.
             </p>
           </div>
         </section>
@@ -51,7 +51,7 @@ export default function EEGMusic() {
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               <p className="text-slate-600 leading-relaxed mb-4">
-                Travail en groupe autour d’un protocole expérimental conçu pour comparer plusieurs conditions de stimulation. Nous avons acquis les signaux, nettoyé les données puis étudié leur contenu fréquentiel.
+                Protocole expérimental en groupe : acquisition, nettoyage puis analyse fréquentielle des signaux.
               </p>
             </div>
 
@@ -86,14 +86,14 @@ export default function EEGMusic() {
             <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
               <h3 className="text-lg font-semibold mb-2">Analyse fréquentielle</h3>
               <p className="text-slate-600 leading-relaxed">
-                Nous avons comparé la puissance de différentes bandes de fréquence pour observer les variations selon les conditions expérimentales.
+                Comparaison de la puissance des bandes de fréquence selon les conditions expérimentales.
               </p>
             </div>
 
             <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
               <h3 className="text-lg font-semibold mb-2">Interprétation</h3>
               <p className="text-slate-600 leading-relaxed">
-                Cette étude nous a aidés à relier le protocole, les stimuli musicaux et le comportement des signaux enregistrés, tout en montrant la complexité des données EEG.
+                Des liens entre stimuli musicaux et signaux enregistrés, malgré la complexité des données EEG.
               </p>
             </div>
           </div>
@@ -110,14 +110,6 @@ export default function EEGMusic() {
           </div>
           <p className="mt-3 text-sm text-slate-500">
             Exemple de setup expérimental ou de résultats d’analyse EEG.
-          </p>
-        </section>
-
-        {/* Apports */}
-        <section className="mb-12 bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-          <h2 className="text-2xl font-semibold mb-4">Ce que j’ai appris</h2>
-          <p className="text-slate-600 leading-relaxed">
-            J’ai appris à manipuler des données physiologiques, à construire un protocole expérimental et à interpréter un signal biomédical de l’acquisition jusqu’à l’analyse.
           </p>
         </section>
 

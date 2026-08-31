@@ -50,9 +50,7 @@ export default function OptiqueProject() {
           </h1>
 
           <p className="max-w-3xl text-lg leading-relaxed text-slate-600">
-            En binôme, nous avons étudié plusieurs phénomènes de diffraction et
-            d’interférences afin de comparer les observations expérimentales aux
-            modèles théoriques.
+            En binôme, comparaison de phénomènes de diffraction et d’interférences aux modèles théoriques.
           </p>
         </section>
 
@@ -61,20 +59,14 @@ export default function OptiqueProject() {
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <h2 className="mb-3 text-xl font-semibold">Contexte</h2>
             <p className="leading-relaxed text-slate-600">
-              Ce projet portait sur l’optique ondulatoire. Nous avons analysé
-              plusieurs configurations expérimentales, comme la fente simple, la
-              bi-fente, les fentes d’Young et le réseau en transmission, pour
-              relier figures observées, profils d’intensité et théorie.
+              Analyse de plusieurs configurations (fente simple, bi-fente, fentes d’Young, réseau) en optique ondulatoire.
             </p>
           </div>
 
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <h2 className="mb-3 text-xl font-semibold">Objectif</h2>
             <p className="leading-relaxed text-slate-600">
-              L’objectif consistait à vérifier les lois de Fresnel et de
-              Fraunhofer, à mesurer l’interfrange et le contraste, puis à estimer
-              des paramètres comme la largeur d’une fente, l’écartement entre
-              deux fentes ou le pas d’un réseau.
+              Vérifier les lois de Fresnel et de Fraunhofer, et estimer des paramètres comme la largeur d’une fente ou le pas d’un réseau.
             </p>
           </div>
         </section>
@@ -97,10 +89,7 @@ export default function OptiqueProject() {
 
             <div>
               <p className="leading-relaxed text-slate-600">
-                J’ai participé à l’acquisition des figures expérimentales, au
-                traitement des profils d’intensité et à l’exploitation des
-                mesures. Nous avons ensuite comparé les résultats aux lois
-                théoriques pour valider les modèles d’optique ondulatoire.
+                Acquisition des figures, traitement des profils d’intensité et comparaison aux lois théoriques.
               </p>
             </div>
           </div>
@@ -112,12 +101,7 @@ export default function OptiqueProject() {
 
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <p className="leading-relaxed text-slate-600">
-              Les mesures obtenues sont restées globalement cohérentes avec la
-              théorie. Nous avons mis en évidence la transition entre Fresnel et
-              Fraunhofer, estimé une largeur de fente proche de 232 µm, un
-              écartement entre fentes d’environ 1,16 mm, un contraste de 0,57
-              pour les fentes d’Young et un pas de réseau compatible avec
-              1200 traits/mm.
+              Mesures cohérentes avec la théorie : largeur de fente ≈ 232 µm, écartement ≈ 1,16 mm, contraste de 0,57, réseau compatible avec 1200 traits/mm.
             </p>
           </div>
         </section>
@@ -150,17 +134,6 @@ export default function OptiqueProject() {
               </button>
             ))}
           </div>
-        </section>
-
-        {/* Apports */}
-        <section className="mb-12 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-          <h2 className="mb-4 text-2xl font-semibold">Ce que j’ai appris</h2>
-          <p className="leading-relaxed text-slate-600">
-            J’ai renforcé ma compréhension de l’optique ondulatoire, de
-            l’exploitation de mesures expérimentales et du calcul
-            d’incertitudes. Ce projet m’a aussi permis de relier observations
-            visuelles, modélisation théorique et analyse quantitative.
-          </p>
         </section>
 
         {/* Compétences */}

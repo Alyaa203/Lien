@@ -59,10 +59,7 @@ export default function StatistiqueProject() {
           </h1>
 
           <p className="max-w-3xl text-lg leading-relaxed text-slate-600">
-            Dans ce projet réalisé en groupe de 5, j’ai participé à l’analyse
-            statistique de données cérébrales afin de comprendre les facteurs
-            influençant l’activation de l’aire de Broca gauche lors d’une tâche
-            de langage.
+            En groupe de 5, analyse statistique des facteurs influençant l’activation de l’aire de Broca gauche lors d’une tâche de langage.
           </p>
         </section>
 
@@ -70,19 +67,14 @@ export default function StatistiqueProject() {
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <h2 className="mb-3 text-xl font-semibold">Contexte</h2>
             <p className="leading-relaxed text-slate-600">
-              Je me suis inscrit dans une étude sur la latéralisation du langage
-              dans le cerveau. L’objectif était d’explorer les relations entre
-              différentes régions cérébrales et certaines variables individuelles
-              comme l’âge, le sexe ou le volume cérébral.
+              Étude de la latéralisation du langage : relations entre régions cérébrales et variables comme l’âge ou le sexe.
             </p>
           </div>
 
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <h2 className="mb-3 text-xl font-semibold">Objectif</h2>
             <p className="leading-relaxed text-slate-600">
-              Mon objectif était d’expliquer l’activation de l’aire de Broca
-              gauche à partir de plusieurs variables explicatives, en utilisant
-              des méthodes statistiques adaptées.
+              Expliquer l’activation de l’aire de Broca gauche à partir de plusieurs variables explicatives.
             </p>
           </div>
         </section>
@@ -102,9 +94,7 @@ export default function StatistiqueProject() {
 
             <div>
               <p className="leading-relaxed text-slate-600">
-                J’ai contribué à la mise en place des modèles statistiques et à
-                l’interprétation des résultats afin d’identifier les variables
-                les plus influentes sur l’activation cérébrale.
+                Mise en place des modèles statistiques et identification des variables les plus influentes.
               </p>
             </div>
           </div>
@@ -115,10 +105,7 @@ export default function StatistiqueProject() {
 
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <p className="leading-relaxed text-slate-600">
-              Les analyses ont permis de mettre en évidence des relations entre
-              certaines régions cérébrales et l’activation de l’aire de Broca.
-              La régression linéaire a montré que certaines variables expliquent
-              une partie significative de la variabilité observée.
+              La régression linéaire montre que certaines régions cérébrales expliquent une part significative de l’activation observée.
             </p>
           </div>
         </section>

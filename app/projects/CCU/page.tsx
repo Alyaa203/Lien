@@ -24,10 +24,7 @@ export default function CCU() {
           </h1>
 
           <p className="text-lg text-slate-600 max-w-3xl leading-relaxed">
-            Projet réalisé sur une année complète autour de la démarche UX.
-            Il couvre l’ensemble du processus de conception centrée utilisateur :
-            analyse des besoins, idéation, conception de maquettes et tests utilisateurs
-            sur différents cas d’étude.
+            Projet annuel couvrant tout le processus UX : idéation, maquettes et tests utilisateurs sur plusieurs cas d’étude.
           </p>
         </section>
 
@@ -36,16 +33,14 @@ export default function CCU() {
           <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
             <h2 className="text-xl font-semibold mb-3">Contexte</h2>
             <p className="text-slate-600 leading-relaxed">
-              Nous avons travaillé en groupe de 4 pour comprendre des usages réels et concevoir des solutions adaptées à différents contextes.
+              En groupe de 4, comprendre des usages réels pour concevoir des solutions adaptées.
             </p>
           </div>
 
           <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
             <h2 className="text-xl font-semibold mb-3">Objectif</h2>
             <p className="text-slate-600 leading-relaxed">
-              Mettre en œuvre une démarche UX complète : analyser un problème,
-              proposer des solutions via des maquettes, puis évaluer leur
-              utilisabilité à travers des tests utilisateurs.
+              Analyser un problème, proposer des maquettes puis évaluer leur utilisabilité.
             </p>
           </div>
         </section>
@@ -59,28 +54,21 @@ export default function CCU() {
             <div>
               <h3 className="text-lg font-semibold mb-2">1. Idéation</h3>
               <p className="text-slate-600 leading-relaxed text-sm">
-                Analyse d’un problème lié à l’observance thérapeutique :
-                recherche utilisateur, personas, benchmark et génération
-                de solutions. Proposition d’un objet connecté facilitant
-                la prise de traitement.
+                Recherche utilisateur et personas autour de l’observance thérapeutique : un objet connecté facilitant la prise de traitement.
               </p>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold mb-2">2. Maquettage</h3>
               <p className="text-slate-600 leading-relaxed text-sm">
-                Conception d’une application autour d’un pass textile
-                responsable. Travail sur l’architecture de l’information,
-                la navigation, et la hiérarchie des fonctionnalités.
+                Conception d’une application autour d’un pass textile responsable : architecture, navigation et fonctionnalités.
               </p>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold mb-2">3. Tests utilisateurs</h3>
               <p className="text-slate-600 leading-relaxed text-sm">
-                Mise en place d’un protocole de test sur une maquette
-                interactive : scénarios, observation des utilisateurs,
-                analyse des erreurs et recommandations UX.
+                Protocole de test sur maquette interactive : scénarios, observation et recommandations UX.
               </p>
             </div>
 
@@ -148,18 +136,6 @@ export default function CCU() {
         Interfaces de l’application COM’UNIQUE.
     </p>
     </section>
-
-        {/* Apports */}
-        <section className="mb-12 bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-          <h2 className="text-2xl font-semibold mb-4">Apports du projet</h2>
-          <p className="text-slate-600 leading-relaxed">
-            Ce projet m’a permis de maîtriser les différentes étapes d’une
-            démarche UX complète, d’apprendre à concevoir pour des utilisateurs
-            réels, et d’itérer à partir de retours concrets. Il m’a également
-            permis de développer une approche structurée de la conception
-            d’interfaces.
-          </p>
-        </section>
 
         {/* Tech */}
         <section className="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">

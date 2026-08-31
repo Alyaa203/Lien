@@ -40,21 +40,14 @@ export default function Reservoir() {
           <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
             <h2 className="text-xl font-semibold mb-3">Contexte</h2>
             <p className="text-slate-600 leading-relaxed">
-              Le reservoir computing est une approche de calcul neuromorphique qui
-              exploite la dynamique intrinsèque d&apos;un système physique (ici un
-              montage à base de fibres optiques) comme réservoir non linéaire,
-              plutôt que d&apos;entraîner l&apos;ensemble d&apos;un réseau de neurones.
+              Le reservoir computing exploite la dynamique d&apos;un système physique (ici un montage à fibres optiques) comme réservoir non linéaire.
             </p>
           </div>
 
           <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
             <h2 className="text-xl font-semibold mb-3">Objectif</h2>
             <p className="text-slate-600 leading-relaxed">
-              Étudier les réservoirs optiques comme alternative aux implémentations
-              numériques du reservoir computing, et construire, par IA (réseau de
-              neurones, régression Ridge), un modèle numérique du montage qui
-              reproduit son comportement pour le valider et l&apos;analyser sans
-              dépendre uniquement du banc optique physique.
+              Construire, par IA (réseau de neurones, régression Ridge), un modèle numérique du montage pour le valider sans dépendre uniquement du banc optique.
             </p>
           </div>
         </section>
@@ -66,11 +59,7 @@ export default function Reservoir() {
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               <p className="text-slate-600 leading-relaxed mb-4">
-                Le travail combine développement expérimental sur un montage à
-                fibres optiques, conception logicielle d&apos;une interface de
-                pilotage complète, et modélisation par IA (réseau de neurones,
-                régression Ridge) du montage physique, permettant de comparer
-                le comportement du réservoir physique à sa contrepartie simulée.
+                Développement expérimental, interface de pilotage et modélisation par IA du montage, pour comparer réservoir physique et simulé.
               </p>
             </div>
 
@@ -105,13 +94,7 @@ export default function Reservoir() {
             <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
               <h3 className="text-lg font-semibold mb-2">Avancement</h3>
               <p className="text-slate-600 leading-relaxed">
-                J&apos;ai conçu et développé l&apos;interface de pilotage complète du
-                montage (réglage des paramètres et du masque de phase, centrage
-                du faisceau, contrôle caméra, boucle de calcul du réservoir), en
-                soignant sa lisibilité et sa robustesse : retours visuels en
-                direct, gestion des échecs d&apos;acquisition et export des données
-                pour analyse. J&apos;ai aussi ajouté un onglet de vérification pour
-                tester la stabilité du montage optique.
+                Conception d&apos;une interface de pilotage complète (paramètres, centrage, caméra, calcul du réservoir) et d&apos;un onglet de vérification pour tester la stabilité du montage.
               </p>
             </div>
 
@@ -136,27 +119,14 @@ export default function Reservoir() {
             <div>
               <h3 className="text-lg font-semibold mb-2">Pilotage et robustesse</h3>
               <p className="text-slate-600 leading-relaxed">
-                L&apos;interface MATLAB réunit tous les onglets nécessaires au
-                pilotage du montage (paramètres et masque de phase, centrage du
-                faisceau, caméra, boucle de calcul du réservoir, vérification),
-                avec un souci constant de lisibilité : aperçus en direct du
-                masque envoyé au SLM, de l&apos;image caméra et des courbes de
-                suivi. La robustesse est traitée dès l&apos;acquisition : plusieurs
-                tentatives et un timeout court en cas d&apos;échec réseau, pour que
-                le pilotage reste fiable sur de longues séries de mesures.
+                Interface MATLAB multi-onglets avec aperçus en direct, et gestion robuste des échecs d&apos;acquisition (tentatives, timeout).
               </p>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold mb-2">Modélisation par IA</h3>
               <p className="text-slate-600 leading-relaxed">
-                Le modèle numérique n&apos;est pas une simple simulation physique :
-                c&apos;est un modèle d&apos;IA (réseau de neurones, régression Ridge)
-                entraîné pour reproduire le comportement entrée-sortie du
-                réservoir optique, avec sa propre architecture et ses propres
-                paramètres. Il permet de valider le montage physique par
-                comparaison, et d&apos;explorer des configurations sans dépendre à
-                chaque essai du banc optique.
+                Un modèle d&apos;IA (réseau de neurones, régression Ridge) entraîné pour reproduire le comportement du réservoir optique.
               </p>
             </div>
           </div>
@@ -164,15 +134,7 @@ export default function Reservoir() {
           <div className="mb-6">
             <h3 className="text-lg font-semibold mb-2">Exemple concret : test de stabilité</h3>
             <p className="text-slate-600 leading-relaxed">
-              Le SLM alterne strictement entre deux masques fixes, un pas sur
-              deux : un masque uniforme et un masque en créneaux. Comme le
-              motif se répète tous les deux pas, je compare le speckle capturé
-              à l&apos;itération n avec celui capturé à l&apos;itération n − 2, qui
-              correspond toujours au même masque. Sur un premier test de 20
-              itérations, la corrélation reste entre 0,9 et 1 sur la majorité
-              des itérations, confirmant la stabilité attendue du montage,
-              avec une chute temporaire (jusqu&apos;à environ 0,6) entre les
-              itérations 15 et 19 dont la cause reste à confirmer.
+              Comparaison du speckle entre itérations n et n − 2 (même masque) : corrélation entre 0,9 et 1, avec une chute temporaire à confirmer entre les itérations 15 et 19.
             </p>
           </div>
 
@@ -184,17 +146,6 @@ export default function Reservoir() {
           >
             Voir le compte-rendu complet (PDF)
           </a>
-        </section>
-
-        {/* Apports */}
-        <section className="mb-12 bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-          <h2 className="text-2xl font-semibold mb-4">Ce que j’apprends</h2>
-          <p className="text-slate-600 leading-relaxed">
-            Ce stage me permet d&apos;approfondir le lien entre optique physique et
-            calcul neuromorphique, et de manipuler un système expérimental de
-            bout en bout, du montage à fibres optiques jusqu&apos;à sa modélisation
-            par IA, en environnement de recherche.
-          </p>
         </section>
 
         {/* Tech */}

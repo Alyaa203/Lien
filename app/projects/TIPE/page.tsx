@@ -64,22 +64,14 @@ export default function ErosionProject() {
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <h2 className="mb-3 text-xl font-semibold">Contexte</h2>
             <p className="leading-relaxed text-slate-600">
-              Le GR21 longe les falaises normandes, soumises à une érosion
-              continue pouvant rendre certains passages impraticables. Le projet
-              s’appuie sur des observations du recul du trait de côte à Étretat,
-              des prélèvements d’échantillons et plusieurs expériences pour
-              relier propriétés de la roche et dégradation observée. 
+              Le GR21 longe les falaises normandes, soumises à une érosion continue pouvant rendre certains passages impraticables.
               </p>
           </div>
 
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <h2 className="mb-3 text-xl font-semibold">Objectif</h2>
             <p className="leading-relaxed text-slate-600">
-              Mon objectif était d’identifier les facteurs dominants de
-              l’érosion, d’évaluer le rôle de la pluie, du pH, de la porosité,
-              de la perméabilité et de la composition calcaire, puis de
-              comprendre comment ces paramètres contribuent à la fragilisation
-              des falaises. 
+              Identifier les facteurs dominants de l’érosion (pluie, pH, porosité, perméabilité, composition calcaire).
             </p>
           </div>
         </section>
@@ -103,12 +95,7 @@ export default function ErosionProject() {
 
             <div>
               <p className="leading-relaxed text-slate-600">
-                J’ai combiné observations de terrain, protocoles expérimentaux
-                et traitement quantitatif des données. Le projet reposait sur la
-                caractérisation de la roche calcaire par ses propriétés
-                physiques, puis sur l’analyse de son comportement face à l’eau,
-                à l’acidité et aux contraintes extérieures. Les incertitudes de
-                certaines mesures ont été estimées par simulation Monte-Carlo. 
+                Observations de terrain, protocoles expérimentaux et traitement quantitatif des données, avec incertitudes estimées par simulation Monte-Carlo.
               </p>
             </div>
           </div>
@@ -120,14 +107,7 @@ export default function ErosionProject() {
 
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <p className="leading-relaxed text-slate-600">
-              Les résultats montrent que l’érosion provient d’une combinaison de
-              mécanismes. D’un point de vue mécanique, la roche présente une
-              porosité mesurée d’environ 2,0 % et une perméabilité de l’ordre de
-              5,3 × 10⁻⁸ m², ce qui favorise la pénétration de l’eau. D’un point
-              de vue chimique, la forte teneur en CaCO₃, estimée à 83,3 %, rend
-              la roche sensible à la dissolution en milieu acide. Les essais sur
-              la pluie et le pH montrent également une augmentation de la perte
-              de masse lorsque l’acidité augmente. 
+              Une érosion combinant porosité (≈2,0 %), perméabilité (≈5,3×10⁻⁸ m²) et forte teneur en CaCO₃ (83,3 %), sensible à la dissolution en milieu acide.
             </p>
           </div>
         </section>

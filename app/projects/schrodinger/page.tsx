@@ -24,7 +24,7 @@ export default function Schrodinger() {
           </h1>
 
           <p className="text-lg md:text-xl text-slate-600 max-w-3xl leading-relaxed">
-          Application interactive pour l'exploration numérique des états stationnaires et de l’évolution temporelle e d'un système quantique, basée sur une discrétisation de l'équation de Schrödinger.
+          Application interactive pour explorer numériquement les états stationnaires et l’évolution temporelle d’un système quantique.
           </p>
 
 
@@ -73,19 +73,16 @@ export default function Schrodinger() {
           <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
             <h2 className="text-xl font-semibold mb-3">Contexte</h2>
             <p className="text-slate-600 leading-relaxed">
-              Ce projet vise à résoudre numériquement l’équation de Schrödinger
-              afin de modéliser l’évolution d’une particule quantique dans un
-              potentiel donné. L’objectif est de relier formulation mathématique,
-              calcul numérique et visualisation scientifique.
+              Résoudre numériquement l’équation de Schrödinger pour modéliser
+              l’évolution d’une particule quantique dans un potentiel donné.
             </p>
           </div>
 
           <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
             <h2 className="text-xl font-semibold mb-3">Objectif</h2>
             <p className="text-slate-600 leading-relaxed">
-              Développer un outil interactif permettant de modifier les paramètres
-              physiques du système, d’observer les états propres, et de suivre la
-              dynamique temporelle de la densité de probabilité.
+              Un outil interactif pour modifier les paramètres physiques, observer
+              les états propres et suivre la dynamique temporelle du système.
             </p>
           </div>
         </section>
@@ -97,10 +94,8 @@ export default function Schrodinger() {
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               <p className="text-slate-600 leading-relaxed mb-4">
-                Le problème quantique est transformé en problème numérique à l’aide
-                d’une discrétisation par différences finies. Cette approche permet
-                de construire un Hamiltonien discret puis de calculer les valeurs
-                propres et vecteurs propres associés.
+                Discrétisation par différences finies pour construire un
+                Hamiltonien discret et calculer ses valeurs et vecteurs propres.
               </p>
             </div>
 
@@ -135,18 +130,14 @@ export default function Schrodinger() {
             <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
               <h3 className="text-lg font-semibold mb-2">États stationnaires</h3>
               <p className="text-slate-600 leading-relaxed">
-                Visualisation de la densité de probabilité associée aux états
-                propres du système, permettant d’interpréter la structure spatiale
-                des solutions stationnaires.
+                Visualisation de la densité de probabilité des états propres.
               </p>
             </div>
 
             <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
               <h3 className="text-lg font-semibold mb-2">Dynamique temporelle</h3>
               <p className="text-slate-600 leading-relaxed">
-                Simulation de l’évolution d’un paquet d’onde au cours du temps,
-                avec représentation de la densité, du potentiel et de la réponse
-                du système à différents paramètres.
+                Évolution d’un paquet d’onde au cours du temps selon les paramètres.
               </p>
             </div>
           </div>
