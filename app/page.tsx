@@ -65,24 +65,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Un mot sur moi */}
-        <section className="mb-16 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
-          <h2 className="mb-4 text-2xl font-bold tracking-tight text-slate-900">
-            Un mot sur moi
-          </h2>
-          <p className="max-w-3xl leading-relaxed text-slate-600">
-            Passionnée par la robotique, l&apos;aérodynamique et l&apos;intelligence
-            artificielle, je me spécialise cette année à l&apos;ENSEIRB-MATMECA
-            pour concevoir des systèmes robotiques intelligents. Je
-            m&apos;intéresse au traitement du signal, aux systèmes embarqués et
-            à l&apos;IA appliquée, à la croisée de la physique et de
-            l&apos;ingénierie. Je réalise actuellement un stage de recherche en
-            reservoir computing optique à l&apos;Institut d&apos;Optique Graduate School,
-            en collaboration avec l&apos;INRIA. Aéronautique, spatial, guitare et
-            photographie complètent mes centres d&apos;intérêt.
-          </p>
-        </section>
-
         {/* Tabs vers les autres pages */}
         <section className="mb-16">
           <div className="grid gap-6 md:grid-cols-3">
