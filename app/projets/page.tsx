@@ -34,6 +34,19 @@ const experienceProjects: Project[] = [
   },
 ];
 
+// ── Robotique et systèmes embarqués ────────────────────────────────────────
+const roboticsProjects: Project[] = [
+  {
+    href: "/projects/FirstBot",
+    badge: "Robotique mobile · Systèmes embarqués",
+    tone: "orange",
+    title: "FirstBot, construire son premier robot",
+    description:
+      "Conception d'un robot mobile autonome : châssis en CAO découpé au laser, servomoteurs Dynamixel pilotés depuis une Raspberry Pi, vision par caméra pour le suivi de ligne, odométrie, déplacement vers une cible et cartographie de la piste.",
+    tech: "Python · Raspberry Pi · OpenCV · Dynamixel · Odométrie · CAO",
+  },
+];
+
 // ── Traitement du signal et modélisation ────────────────────────────────────
 const signalProjects: Project[] = [
   {
@@ -146,6 +159,7 @@ const statsProjects: Project[] = [
 
 const navItems = [
   { label: "Expérience professionnelle", href: "#experience" },
+  { label: "Robotique", href: "#robotics" },
   { label: "Traitement du signal", href: "#signal" },
   { label: "Programmation", href: "#coding" },
   { label: "Modélisation", href: "#modeling" },
@@ -245,6 +259,13 @@ export default function Projets() {
           title="Expérience professionnelle"
           description="Stages et alternance."
           projects={experienceProjects}
+        />
+
+        <ProjectSection
+          id="robotics"
+          title="Robotique et systèmes embarqués"
+          description="Conception et programmation de robots mobiles : mécanique, électronique, vision et commande."
+          projects={roboticsProjects}
         />
 
         <ProjectSection
