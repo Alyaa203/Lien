@@ -90,16 +90,4 @@ To add a project: create `app/projects/<Name>/page.tsx`, put its images in `publ
 
 ---
 
-## Screenshots
-
-> _Screenshots coming soon._
-
-| Home | Projects | Project page |
-| :---: | :---: | :---: |
-| ![Home](docs/screenshots/home.png) | ![Projects](docs/screenshots/projects.png) | ![Project page](docs/screenshots/project.png) |
-
-<!-- Add images to docs/screenshots/ using the file names above. -->
-
----
-
 **Contact:** [LinkedIn](https://www.linkedin.com/in/alyaa-saab-ensc) · [GitHub](https://github.com/Alyaa203)
