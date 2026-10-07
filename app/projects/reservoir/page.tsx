@@ -16,7 +16,7 @@ export default function Reservoir() {
         <section className="mb-12">
           <div className="flex flex-wrap gap-2 mb-4">
             <div className="inline-block px-3 py-1 rounded-full bg-amber-100 text-amber-700 text-sm font-medium">
-              Stage de recherche en cours · 3 mois
+              Stage de recherche · 3 mois
             </div>
             <div className="inline-block px-3 py-1 rounded-full bg-teal-100 text-teal-700 text-sm font-medium">
               Reservoir Computing optique
@@ -88,7 +88,7 @@ export default function Reservoir() {
 
         {/* Résultats */}
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-5">Résultats (stage en cours)</h2>
+          <h2 className="text-2xl font-semibold mb-5">Résultats</h2>
 
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">

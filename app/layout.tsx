@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Alyaa Saab, Portfolio",
   description:
-    "Portfolio d'Alyaa Saab, élève-ingénieure ENSC et licence de physique quantique en robotique, signal, IA et modélisation scientifique.",
+    "Portfolio d'Alyaa Saab, élève-ingénieure ENSC et diplômée d'une licence de physique : robotique, signal, IA et modélisation scientifique.",
 };
 
 export default function RootLayout({

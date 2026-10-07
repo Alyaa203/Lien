@@ -26,7 +26,7 @@ const tabs: TabTile[] = [
   {
     href: "/programmes",
     title: "Programmes",
-    description: "Mon cursus ENSC, ma licence de physique quantique et ma spécialisation Robotique.",
+    description: "Mon cursus ENSC, ma licence de physique et ma spécialisation Robotique.",
     badge: "Formation",
     badgeColor: "bg-indigo-100 text-indigo-700",
   },

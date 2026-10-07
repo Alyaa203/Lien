@@ -7,7 +7,7 @@ const timeline = [
     date: "Depuis 2024",
   },
   {
-    title: "Licence de Physique, spécialité physique quantique",
+    title: "Licence de Physique",
     place: "Université de Bordeaux",
     date: "2025",
   },
@@ -44,8 +44,7 @@ export default function Programmes() {
           </h1>
           <p className="text-lg text-slate-600 max-w-3xl leading-relaxed">
             Élève-ingénieure en 3ème année (Bac+5) à l&apos;ENSC (Bordeaux INP),
-            licence de physique (spécialité physique quantique) obtenue en
-            parallèle.
+            licence de physique obtenue en parallèle.
           </p>
         </section>
 
@@ -80,12 +79,12 @@ export default function Programmes() {
             <div className="inline-block px-3 py-1 mb-4 rounded-full bg-amber-100 text-amber-700 text-sm font-medium">
               Licence obtenue en 2025
             </div>
-            <h2 className="text-xl font-bold text-slate-900 mb-3">Physique quantique</h2>
+            <h2 className="text-xl font-bold text-slate-900 mb-3">Licence de Physique</h2>
             <p className="text-slate-600 leading-relaxed">
-              Licence de Physique, spécialité physique quantique, obtenue à
-              l&apos;Université de Bordeaux en parallèle du cursus d&apos;ingénieur. Elle
-              m&apos;a donné un socle solide en mécanique quantique, modélisation
-              numérique et physique des systèmes complexes.
+              Licence de Physique obtenue à l&apos;Université de Bordeaux en
+              parallèle du cursus d&apos;ingénieur. Elle m&apos;a donné un socle
+              solide en mécanique, électromagnétisme, ondes et optique,
+              thermodynamique et modélisation numérique.
             </p>
           </div>
         </section>
