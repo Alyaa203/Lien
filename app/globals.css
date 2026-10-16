@@ -12,6 +12,16 @@
   --font-mono: var(--font-geist-mono);
 }
 
+@theme {
+  --animate-caret: caret 1s step-end infinite;
+
+  @keyframes caret {
+    50% {
+      opacity: 0;
+    }
+  }
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

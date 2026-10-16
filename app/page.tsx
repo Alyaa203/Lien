@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Hero } from "@/app/components/hero";
 
 type TabTile = {
   href: string;
@@ -35,36 +36,9 @@ const tabs: TabTile[] = [
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50 text-slate-900">
-      <div className="mx-auto max-w-6xl px-6 py-10 md:px-10">
-        {/* Hero */}
-        <section className="mb-16 grid items-center gap-10 md:grid-cols-2">
-          <div className="flex justify-center md:justify-start">
-            <div className="relative h-56 w-56 md:h-72 md:w-72">
-              <img
-                src="/moi.JPG"
-                alt="Alyaa Saab"
-                className="h-full w-full rounded-2xl object-cover shadow-xl"
-              />
-            </div>
-          </div>
+      <Hero />
 
-          <div>
-            <p className="text-sm font-medium uppercase tracking-wide text-blue-600">
-              Portfolio
-            </p>
-            <h1 className="mt-2 text-4xl font-bold leading-tight text-slate-900 md:text-5xl">
-              Alyaa Saab
-            </h1>
-            <p className="mt-5 max-w-xl text-lg leading-relaxed text-slate-600">
-              Élève-ingénieure en 3ème année (Bac+5) à l&apos;École nationale
-              supérieure de cognitique (ENSC), et titulaire d&apos;une licence de
-              physique obtenue en parallèle. Je recherche actuellement une
-              alternance ou un stage de fin d&apos;études en Robotique, Systèmes
-              embarqués, IA, Traitement du signal ou Simulation numérique.
-            </p>
-          </div>
-        </section>
-
+      <div className="mx-auto max-w-6xl px-6 py-16 md:px-10">
         {/* Tabs vers les autres pages */}
         <section className="mb-16">
           <div className="grid gap-6 md:grid-cols-3">
