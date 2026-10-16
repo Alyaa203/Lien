@@ -124,7 +124,7 @@ export default function Programmes() {
 
         <section className="mb-6 bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
           <div className="inline-block px-3 py-1 mb-4 rounded-full bg-teal-100 text-teal-700 text-sm font-medium">
-            3ème année · 2026-2027 · À la recherche d&apos;une alternance
+            3ème année · 2026-2027
           </div>
           <h2 className="text-xl font-bold text-slate-900 mb-3">
             Spécialisation Robotique et apprentissage
