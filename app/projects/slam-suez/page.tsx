@@ -92,16 +92,11 @@ export default function SlamSuez() {
             <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
               <h3 className="text-lg font-semibold mb-2">En cours</h3>
               <p className="text-slate-600 leading-relaxed">
-                Intégration des caméras RGB au pipeline LIO-SAM, premiers tests en simulation.
+                État de l'art 
               </p>
             </div>
 
-            <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-              <h3 className="text-lg font-semibold mb-2">Perspectives</h3>
-              <p className="text-slate-600 leading-relaxed">
-                Validation sur le robot quadrupède réel en environnement tunnel.
-              </p>
-            </div>
+
           </div>
         </section>
 
